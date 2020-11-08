@@ -1,4 +1,4 @@
-@def title = "Franklin Example"
+@def title = "ME 417 Control of Mechanical System"
 @def tags = ["syntax", "code"]
 
 # ME 417 Control of Mechanical Systems
