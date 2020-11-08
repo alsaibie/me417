@@ -20,7 +20,25 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://alsaibie.github.io/me417/lessons_julia/index.html</loc>
+    <lastmod>2020-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://alsaibie.github.io/me417/course_material/index.html</loc>
+    <lastmod>2020-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://alsaibie.github.io/me417/menu1/index.html</loc>
+    <lastmod>2020-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://alsaibie.github.io/me417/lessons_matlab/index.html</loc>
     <lastmod>2020-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
