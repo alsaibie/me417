@@ -1,7 +1,7 @@
 @def title = "Franklin Example"
 @def tags = ["syntax", "code"]
 
-# How to use Franklin
+# ME 417 Control of Mechanical Systems
 
 \tableofcontents <!-- you can use \toc as well -->
 
