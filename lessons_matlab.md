@@ -17,10 +17,10 @@ Description
 Link
 ## Lesson 3 - Root-Locus Controller Design
 Description
-[Lesson](/numerical_lessons_matlab/Numerical_Lesson_#3/index.html)
+[Lesson](/numerical_lessons_matlab/Numerical_Lesson_3/index.html)
 ## Lesson 4 - State-Space Controller Design
 Description
-[Lesson](/numerical_lessons_matlab/Numerical_Lesson_#4/index.html)
+[Lesson](/numerical_lessons_matlab/Numerical_Lesson_4/index.html)
 
 ## Numerical Simulation PID Controller
 [Lesson](/numerical_lessons_matlab/Numerical_Simulation_PID_Controller/index.html)
