@@ -1,4 +1,4 @@
-@def title = "Part I - Introduction"
+@def title = "Part II L1 - Introduction to Root-Locus"
 @def hascode = true
 
 ## Introduction
@@ -6,4 +6,4 @@
 ## Lecture Video
 
 ## Lecture Handout
-[Handout](/part_i/ME417_Controls_Part_I_Lecture_2_Intro_Analysis_and_Design.pdf)
+[Handout](/part_ii/ME417_-_Controls_-_Part_II_Lecture_1_Introduction_to_Root-Locus.pdf)
