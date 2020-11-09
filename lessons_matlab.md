@@ -12,18 +12,15 @@
 ## Lesson 1 - System Response and Numerical Integration
 Description
 Link
-## Lesson 2 - PID Control 
+## Lesson 2 - Feedback Control and PID Tuning
 Description
 Link
-## Lesson 3 - Simulation of Feedback Controlled Systems
+## Lesson 3 - Root-Locus Controller Design
 Description
-Link
-## Lesson 4 - Computer-Assisted Control System Design via Root-Locus (Control System Designer)
+[Lesson](/numerical_lessons_matlab/Numerical_Lesson_#3/index.html)
+## Lesson 4 - State-Space Controller Design
 Description
-Link
-## Lesson 5 - State-Space Full-State Feedback Controller Design
-Description
-Link
-## Lesson 6 - Full-State Feedback with Integrator
-Description
-Link
+[Lesson](/numerical_lessons_matlab/Numerical_Lesson_#4/index.html)
+
+## Numerical Simulation PID Controller
+[Lesson](/numerical_lessons_matlab/Numerical_Simulation_PID_Controller/index.html)
