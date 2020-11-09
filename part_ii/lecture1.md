@@ -1,4 +1,4 @@
-@def title = "Part I L1 - Introduction"
+@def title = "Part I - Introduction"
 @def hascode = true
 
 ## Introduction
