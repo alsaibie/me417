@@ -1,3 +1,4 @@
+@def title = "Numerical Lesson #4 - MATLAB"
 # ~~~<span style='color:green'>ME 417 Control of Mechanical Systems</span>~~~
 ### Numerical Lesson #4
 
@@ -123,7 +124,7 @@ plot(t(1,1:end),x(1,1:end), 'r:', 'LineWidth', 3)
 legend (["Step", "Numerical Integration"])
 grid on
 ```
-![png](output_3_1.png)
+\fig{./output/output_3_1.png}
 
 
 ### I.B Non-Collocated Control
@@ -198,9 +199,7 @@ legend (["Step", "Numerical Integration"])
 grid on
 ```
 
-
-![png](output_5_1.png)
-
+\fig{./output/output_5_1.png}
 
 In this example, the numerical integration differs from the continous domain solution, can you guess *why*? Decrease $dt$ and retry.
 
@@ -394,7 +393,8 @@ legend (["Step", "Numerical Integration"])
 grid on
 ```
 
-![png](output_13_1.png)
+\fig{./output/output_13_1.png}
+
 
 
 The numerical integration simulation has a different response, can you guess *why*? Are the models the same?
@@ -470,8 +470,8 @@ legend (["Ideal", "Noisy"])
 xlabel("Time [s]"); ylabel("Position [m]"); title("Cart Position Response")
 ```
 
+\fig{./output/output_16_1.png}
 
-![png](output_16_1.png)
 
 
 ### II.C Payload-Only Position Control and Disturbance Rejection via PID Control
@@ -549,8 +549,8 @@ legend (["Ideal", "Noisy"])
 xlabel("Time [s]"); ylabel("Angle [$\theta$]",'Interpreter','latex'); title("Payload Response")
 ```
 
+\fig{./output/output_18_1.png}
 
-![png](output_18_1.png)
 
 
 ### II.D Crane Control via Full State Feedback
@@ -687,8 +687,8 @@ xlabel("Time [s]"); ylabel("Angle [$\theta$]",'Interpreter','latex'); title("Pay
     
     
 
+\fig{./output/output_20_1.png}
 
-![png](output_20_1.png)
 
 
 ## PART III: MULTIPLE OUTPUT CONTROLLER DESIGN FOR AN UNSTABLE NONLINEAR SYSTEM
@@ -916,8 +916,8 @@ tplace = t; xplace = xnoisy;
     
     
 
+\fig{./output/output_25_1.png}
 
-![png](output_25_1.png)
 
 
 ### III.C Inverted Pendulum Control via Full State Feedback -- Linear Quadratic Regulator (LQR)
@@ -1028,8 +1028,8 @@ xlabel("Time [s]"); ylabel("Angle [$\theta$]",'Interpreter','latex'); title("Pay
 tlqr = t; xlqr = xnoisy;
 ```
 
+\fig{./output/output_27_1.png}
 
-![png](output_27_1.png)
 
 
 Now let's compare between the Pole Placement method and LQR method
@@ -1057,6 +1057,6 @@ plot(tlqr(1,1:end),xlqr(3,1:end), 'k:', 'LineWidth', 1.5)
 legend (["Pole Placement", "LQR"])
 xlabel("Time [s]"); ylabel("Angle [$\theta$]",'Interpreter','latex'); title("Payload Response")
 ```
+\fig{./output/output_29_1.png}
 
-![png](output_29_1.png)
 
