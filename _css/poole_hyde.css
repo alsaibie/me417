@@ -305,9 +305,9 @@ a.sidebar-nav-item:focus {
   padding-bottom: 4rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 968px) {
   .content {
-    max-width: 45rem;
+    max-width: 65rem;
     margin-left: 15rem;
     margin-right: 2rem;
   }

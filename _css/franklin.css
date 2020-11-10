@@ -65,7 +65,7 @@ html {
 /* on wide screens, fix content width to a max value */
 @media (min-width: 940px) {
     .franklin-content {
-        width: 705px;
+        width: 905px;
         margin-left: auto;
         margin-right: auto; }
     }
@@ -183,9 +183,14 @@ html {
 ================================================================== */
 
 .franklin-content img {
-    width: 70%;
+    width: 100%;
     text-align: center;
     padding-left: 10%; }
+
+.franklin-content .img-svg img {
+        width: 70%;
+        text-align: center;
+        padding-left: 10%; }
 
 .franklin-content .img-small img {
     width: 50%;
