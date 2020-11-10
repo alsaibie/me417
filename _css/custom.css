@@ -27,11 +27,11 @@ html, body {
     overflow-x: hidden;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .sidebar {
         display: none;
     }
-    }
+} */
 
 .content {
     padding-top: 0;
