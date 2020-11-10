@@ -22,10 +22,16 @@ html, body {
 
 
 .sidebar {
-    z-index: 2;
+    z-index: 1;
     overflow-y: auto;
     overflow-x: hidden;
 }
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    }
 
 .content {
     padding-top: 0;
