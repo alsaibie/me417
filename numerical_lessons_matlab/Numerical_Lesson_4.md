@@ -221,10 +221,11 @@ A bridge crane is modeled as a cart suspended on a rail with a pendulum connecte
 
 The equations of motion for the crane model above is given by the following
 
-\begin{align}
-    \left( m_{c} + m_{r} \right)\ddot{x} + b\dot{x} + m_{r}l\ddot{\theta}cos\theta - m_{r}l{\dot{\theta}}^{2}sin\theta = f(t) \\
+$$
+    \left( m_{c} + m_{r} \right)\ddot{x} + b\dot{x} + m_{r}l\ddot{\theta}cos\theta - m_{r}l{\dot{\theta}}^{2}sin\theta = f(t)
+    
     \left( I + m_{r}l^{2} \right)\ddot{\theta} + m_{r}glsin\theta = - m_{r}l\ddot{x}\text{cosθ}
-\end{align}
+$$
 
 After algebraic manipulation to remove the coupling of second derivates,
 we get

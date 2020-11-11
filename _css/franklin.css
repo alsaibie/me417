@@ -203,14 +203,16 @@ html {
 
 body { counter-reset: eqnum; }
 
-.katex { font-size: 1em !important; 
+.katex { 
+    font-family: 'JuliaMono';
+    font-size: 1em !important; 
     /* line-height: 1.2; */
     /* white-space: normal; */
     /* text-indent: 0; */
 }
 
 .katex-display .katex {
-    max-width: 100%;
+    max-width: 90%;
     overflow-x: auto;
     overflow-y: hidden;
     padding-left: 2px;
@@ -225,6 +227,9 @@ body { counter-reset: eqnum; }
     /* transform: translateY(50%); */
     float: right;
     transform: translateY(-100%);
+    padding-right: 5px;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 
 /* .katex-display::after {
