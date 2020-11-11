@@ -221,18 +221,18 @@ A bridge crane is modeled as a cart suspended on a rail with a pendulum connecte
 
 The equations of motion for the crane model above is given by the following
 
-\begin{aligned}
+\begin{align}
     \left( m_{c} + m_{r} \right)\ddot{x} + b\dot{x} + m_{r}l\ddot{\theta}cos\theta - m_{r}l{\dot{\theta}}^{2}sin\theta = f(t) \\
     \left( I + m_{r}l^{2} \right)\ddot{\theta} + m_{r}glsin\theta = - m_{r}l\ddot{x}\text{cosθ}
-\end{aligned}
+\end{align}
 
 After algebraic manipulation to remove the coupling of second derivates,
 we get
 
-\begin{aligned}
+\begin{align}
 \left( \left( I + m_{r}l^{2} \right)\left( m_{c} + m_{r} \right) - m_{r}^{2}l^{2}\cos^{2}\theta \right)\ddot{x} - \left( I + m_{r}l^{2} \right)m_{r}l{\dot{\theta}}^{2}cos\theta - m_{r}^{2}l^{2}gcos\theta sin\theta + \left( I + m_{r}l^{2} \right)b\dot{x} = \left( I + m_{r}l^{2} \right)f(t) \\
 \left( \left( m_{r} + m_{c} \right)\left( I + m_{r}l^{2} \right) - m_{r}^{2}l^{2}\cos^{2}\theta \right)\ddot{\theta} - b\dot{x} + m_{r}\text{lcosθ}{\dot{\theta}}^{2} + \left( m_{r} + m_{c} \right)m_{r}glsin\theta = - m_{r}lcos\theta f(t)
-\end{aligned}
+\end{align}
 
 
 Where $b$ is the coefficient of friction between the wheels and the track, $m_{r}$ and $m_{c}$ are the rod and cart mass respectively, $I$ is the rod's moment of inertia about its center of mass, $l$ is the distance from the pivot to the center of mass of the rod and $g$ is the gravity constant. Note that the above equations are nonlinear due to the presence of the trigonometric terms $sin\theta,\, cos\theta$ and the square term ${\dot{\theta}}^{2}$.

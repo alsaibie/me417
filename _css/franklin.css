@@ -203,18 +203,38 @@ html {
 
 body { counter-reset: eqnum; }
 
-.katex { font-size: 1em !important; }
+.katex { font-size: 1em !important; 
+    /* line-height: 1.2; */
+    /* white-space: normal; */
+    /* text-indent: 0; */
+}
 
 .katex-display .katex {
-    display: inline-block; } /* overwrite katex settings */
-
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-left: 2px;
+    padding-right: 2px;
+}
 .katex-display::after {
     counter-increment: eqnum;
     content: "(" counter(eqnum) ")";
     position: relative;
+    display: block;
+    top: 50%;
+    /* transform: translateY(50%); */
     float: right;
-    padding-right: 5px; }
+    transform: translateY(-100%);
+  }
 
+/* .katex-display::after {
+    counter-increment: eqnum;
+    content: "(" counter(eqnum) ")";
+    position: relative;
+    float: right;
+    padding-right: 5px; } */
+    
+    
 /* ==================================================================
     CODE & HIGHLIGHT.JS
 ================================================================== */
