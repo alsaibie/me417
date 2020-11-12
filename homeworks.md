@@ -16,6 +16,9 @@
 [Homework #3](ME_417_Control_of_Mechanical_Systems_Summer_2020_-_Homework_3.pdf),
 [Homework #3 Solution](ME_417_Control_of_Mechanical_Systems_Summer_2020_-_Homework_3_Solution.pdf)
 
+[Homework #4](ME_417_Control_of_Mechanical_Systems_Summer_2020_-_Homework_4.pdf),
+[Homework #4 Solution](ME_417_Control_of_Mechanical_Systems_Summer_2020_-_Homework_4_Solution.pdf)
+
 ## Spring 2020
 
 [Homework #1](ME_417_Control_of_Mechanical_Systems_Spring_2020_-_Homework_1.pdf)

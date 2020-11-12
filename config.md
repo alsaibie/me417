@@ -6,7 +6,7 @@ The website_* must be defined for the RSS to work
 @def website_title = "ME 417 Control of Mechanical Systems"
 @def website_descr = "ME 417 Control of Mechanical Systems Course Website - Kuwait University"
 @def website_url   = "https://alsaibie.github.io/me417/"
-
+@def hasplotly = false
 @def prepath = "me417"
 
 @def author = "Ali AlSaibie, PhD"

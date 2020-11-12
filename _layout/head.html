@@ -7,6 +7,8 @@
   {{if hascode}} {{insert head_highlight.html }}   {{end}}
   {{insert style.html}}
   {{isdef title}} <title>{{fill title}}</title>  {{end}}
+    <!-- PLOTLY -->
+    {{if hasplotly}} <script src="/libs/plotly/plotly.min.js"></script> {{end}}
 </head>
 <body>
 {{insert sidebar.html}}
