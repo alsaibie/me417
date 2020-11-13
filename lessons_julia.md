@@ -85,7 +85,8 @@ Using this approach with the `generate_results.jl` file also makes sure that all
 
 Test Animation
 
-```julia:heartgifplot
+<!-- ```julia:heartgifplot -->
+```julia
 using Plots
 
 @userplot CirclePlot
@@ -113,7 +114,8 @@ gif(anim, joinpath(@OUTPUT, "heart.gif")) #hide
 
 \fig{heart}
 
-```julia:lorenzplot
+<!-- ```julia:lorenzplot -->
+```julia
 using Plots
 # define the Lorenz attractor
 Base.@kwdef mutable struct Lorenz

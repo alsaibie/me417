@@ -1,5 +1,6 @@
 @def title = "Numerical Lesson #4 - MATLAB"
-# ~~~<span style='color:green'>ME 417 Control of Mechanical Systems</span>~~~
+# ~~~
+<span style='color:green'>ME 417 Control of Mechanical Systems</span>~~~
 ### Numerical Lesson #4
 
 ## PART I: FROM S-PLANE PID CONTROLLER DESIGN TO DIGITAL IMPLEMENTATION
