@@ -40,8 +40,8 @@ Past [Homework](homeworks/index.html) and [Numerical Assignments](numerical_assi
 \\
 **Recommended References:**
 
-R. C. Dorf & R. H. Bishop, Modern Control Systems
-G. F. Franklin, J. D. Powell & A. Emami-Naeini, Feedback Control of Mechanical Systems
+R. C. Dorf & R. H. Bishop, Modern Control Systems\\
+G. F. Franklin, J. D. Powell & A. Emami-Naeini, Feedback Control of Mechanical Systems\\
 K. Ogata, Modern Control Engineering
 
 
