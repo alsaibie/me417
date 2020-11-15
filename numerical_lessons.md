@@ -36,3 +36,7 @@ Description
 ## Numerical Simulation PID Controller
 
 [MATLAB](/numerical_lessons_matlab/Numerical_Simulation_PID_Controller/index.html)
+
+\\
+\\
+[Main Page](/index.html)

@@ -12,7 +12,15 @@ Course syllabus can be found here:
   
 
 ## Class Lectures
-Lecture Notes and videos (planned) can be found listed on the site navigation bar.
+Lecture notes and videos (planned) can be found listed on the site navigation bar.
+
+| [Part I](part_i/introduction/index.html) ~~~<br>~~~ |  Introduction to Feedback Control
+
+| [Part II](part_ii/introduction/index.html)  ~~~<br>~~~ | Controller Design via Root-Locus
+
+| [Part III](part_iii/introduction/index.html)~~~<br>~~~ | Controller Design via State-Space
+
+| [Part IV](part_iv/introduction/index.html)  ~~~<br>~~~ | Controller Design via Frequency Response
 
 ## [Numerical Lessons](numerical_lessons/index.html)
 The course gives a strong emphasis on applying control system theory numerically, through the use of built-in functions and bare-method simulations. 
