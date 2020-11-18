@@ -28,7 +28,7 @@ Given the following parameters: $M = 7\text{kg}$, $K = 2.8N\text{/}m$, $f_{v} = 
 
 Simulate the response of the system to a step input using the command *step()* in MATLAB. Repeat the step simulation with $f_{v} = 5$, and $f_{v} = 20$. Plot the three responses on the same plot. Explain the observed difference between the three responses.
 
-Using the command *step()* is useful for analyzing a system's response to a simple and  constant input to a system, but what if the input varies? We can instead use the mmand *lsim()*.
+Using the command *step()* is useful for analyzing a system's response to a simple and  constant input to a system, but what if the input varies? We can instead use the command *lsim()*.
 
 ```matlab
 clear all;

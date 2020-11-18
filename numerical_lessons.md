@@ -23,7 +23,7 @@ Building on material from Lesson 1, feedback control is introduced in the contex
 ~~~
 
 [Julia](),
-[MATLAB]()
+[MATLAB](/numerical_lessons_matlab/Numerical_Lesson_2/index.html)
 
 ## Lesson 3 - Root-Locus Controller Design
 This lesson showcases the way a controller is designed using pole placement and root-locus. The controller designed using root-locus is implemented back into closed-loop simulation of the system.\\\\
