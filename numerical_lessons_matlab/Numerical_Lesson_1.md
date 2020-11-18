@@ -1,7 +1,12 @@
 @def title = "Numerical Lesson #1 - MATLAB"
 # ~~~
 <span style='color:green'>ME 417 Control of Mechanical Systems</span>~~~
+
+[Back to Lessons](/numerical_lessons/index.html)
+
 ### Numerical Lesson #1
+
+
 
 ## PART I: SIMULATING A SYSTEM RESPONSE
 

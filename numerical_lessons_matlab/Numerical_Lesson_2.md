@@ -1,6 +1,9 @@
 @def title = "Numerical Lesson #2 - MATLAB"
 # ~~~
 <span style='color:green'>ME 417 Control of Mechanical Systems</span>~~~
+
+[Back to Lessons](/numerical_lessons/index.html)
+
 ### Numerical Lesson #2
 
 ## PART I: TIME RESPONSE ANALYSIS
