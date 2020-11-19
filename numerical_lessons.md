@@ -13,7 +13,7 @@ This lesson is an introduction to Simulation of Dynamical Systems, through the u
 ~~~
 <center><img src="/assets/numerical_lessons_matlab/Numerical_Lesson_1/media/MSD.svg" style="max-width:450px"></center>
 ~~~
-[Julia](),
+[Julia](/numerical_lessons_julia/Numerical_Lesson_1/index.html),
 [MATLAB](/numerical_lessons_matlab/Numerical_Lesson_1/index.html)
 
 ## Lesson 2 - Feedback Control and PID Tuning
