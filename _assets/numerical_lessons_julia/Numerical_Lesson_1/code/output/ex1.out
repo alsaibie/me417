@@ -1,0 +1,16 @@
+G = ControlSystems.TransferFunction{ControlSystems.Continuous,ControlSystems.SisoRational{Float64}}[ControlSystems.TransferFunction{ControlSystems.Continuous,ControlSystems.SisoRational{Float64}}
+                0.4
+------------------------------------
+1.0*s^2 + 0.2142857142857143*s + 0.4
+
+Continuous-time transfer function model ControlSystems.TransferFunction{ControlSystems.Continuous,ControlSystems.SisoRational{Float64}}
+                0.4
+------------------------------------
+1.0*s^2 + 0.7142857142857143*s + 0.4
+
+Continuous-time transfer function model ControlSystems.TransferFunction{ControlSystems.Continuous,ControlSystems.SisoRational{Float64}}
+                0.4
+-----------------------------------
+1.0*s^2 + 2.857142857142857*s + 0.4
+
+Continuous-time transfer function model]
