@@ -165,8 +165,7 @@ sol = solve(prob, Tsit5())
  
 # And plot
 p = plot(sol, lw=3, label = ["\$x\$" "\$\\dot{x}\$"])
-plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="",
-background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
+plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="", background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
 savefig(joinpath(@OUTPUT, "snp1_plot.svg")) # hide
 
 ```
@@ -203,8 +202,7 @@ sol = solve(prob, Tsit5())
  
 # And plot
 p = plot(sol, lw=3, label = ["\$x\$" "\$\\dot{x}\$"])
-plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="",
-background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
+plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="", background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
 savefig(joinpath(@OUTPUT, "ex3_plot.svg")) # hide
 ```
 \fig{ex3_plot}
@@ -251,8 +249,7 @@ end
 plot(t,ui[1,:])
 p = plot(t,x_sim[1,:], lw=3, label = "\$x\$")
 plot!(p, t,x_sim[2,:], lw=3, label = "\$\\dot{x}\$")
-plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="",
-background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
+plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="", background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
 savefig(joinpath(@OUTPUT, "snp2_plot.svg")) # hide
 ```
 \fig{snp2_plot}
@@ -299,8 +296,7 @@ end
 plot(t,ui[1,:])
 p = plot(t,x_sim[1,:], lw=3, label = "\$x\$")
 plot!(p, t,x_sim[2,:], lw=3, label = "\$\\dot{x}\$")
-plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="",
-background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
+plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="", background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
 savefig(joinpath(@OUTPUT, "ex3_plot.svg")) # hide
 ```
 \fig{ex3_plot}
@@ -367,8 +363,7 @@ end
 p = plot(t,us.(t), lw=3, label = "M")
 plot!(t,x_sim[1,:], lw=3, label = "\$θ\$")
 plot!(p, t,x_sim[2,:], lw=3, label = "\$\\dot{θ}\$")
-plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="",
-background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
+plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="", background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
 savefig(joinpath(@OUTPUT, "ex4_plot.svg")) # hide
 ```
 \fig{ex4_plot}
@@ -401,8 +396,7 @@ end
 p = plot(t,us.(t), lw=3, label = "M")
 plot!(t,x_sim[1,:], lw=3, label = "\$θ\$")
 plot!(p, t,x_sim[2,:], lw=3, label = "\$\\dot{θ}\$")
-plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="",
-background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
+plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="", background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
 savefig(joinpath(@OUTPUT, "ex4_2_plot.svg")) # hide
 ```
 \fig{ex4_2_plot}
@@ -471,8 +465,7 @@ end
 p = plot(t,up.(t), lw=3, label = "M")
 plot!(t,x_sim[1,:], lw=3, label = "\$θ\$")
 plot!(p, t,x_sim[2,:], lw=3, label = "\$\\dot{θ}\$")
-plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="",
-background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
+plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="", background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
 savefig(joinpath(@OUTPUT, "ex5_plot.svg")) # hide
 ```
 
@@ -516,8 +509,7 @@ end
 p = plot(t,up.(t), lw=3, label = "M")
 plot!(t,x_sim[1,:], lw=3, label = "\$θ\$")
 plot!(p, t,x_sim[2,:], lw=3, label = "\$\\dot{θ}\$")
-plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="",
-background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
+plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="", background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
 savefig(joinpath(@OUTPUT, "ex5_2_plot.svg")) # hide
 ```
 \fig{ex5_2_plot}
