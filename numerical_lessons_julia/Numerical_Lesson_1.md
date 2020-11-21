@@ -12,7 +12,7 @@ In this part you will be simulating a general second-order dynamic system using 
 
 The general form of a second-order dynamic system represented by Figure 1, is given by the transfer function
 
-$$\frac{X\left( s \right)}{U\left( s \right)} = \frac{\omega_{n}^{2}}{s^{2} + 2\zeta\omega_{n}s + \omega_{n}^{2}}$$ 
+$$\frac{X( s )}{U( s )} = \frac{\omega_{n}^{2}}{s^{2} + 2\zeta\omega_{n}s + \omega_{n}^{2}}$$ 
 
 Where $\omega_{n}$ and $\zeta$ are given by the definitions:
 $\omega_{n} = \sqrt{\frac{K}{M}}$, $2\zeta\omega_{n} = \frac{f_{v}}{M}$
@@ -42,7 +42,7 @@ Using the command *stepplot()* is useful for analyzing a system's response to a 
 
 Repeat the task above, but to an input force defined by the piecewise function below, using the command *lsimplot()* from ControlSystems.jl package, from $t = 0s$ to $t = 100s$, and plot the result in a new figure.
 
-$f\left( t \right) = \left\{ \begin{matrix}
+$f( t ) = \left\{ \begin{matrix}
 0 & ,0 < t \leq 1.5s \\
 3 & ,1.5s < t \leq 8s \\
 \begin{matrix}
@@ -87,7 +87,7 @@ $$
 {\dot{x}}_{2} \\                                      
 \end{bmatrix} = \begin{bmatrix}                       
 x_{2} \\                                              
-\dfrac{u\left( t \right) - cx_{1} - bx_{2}}{a} \\      
+\dfrac{u( t ) - cx_{1} - bx_{2}}{a} \\      
 \end{bmatrix}
 $$                                  
 
@@ -111,7 +111,7 @@ over a given time period $t \in \lbrack 0,t_{f}\rbrack$. In the following code s
 **~~~
 <span style='color:green'>EXERCISE 2</span>~~~**
 
-Obtain the differential equation from the transfer function on the first page from equation (1), into the form shown in equation (2), then simulate the response to a *sinusoidal input* of unity magnitude and $f = 0.1Hz$, $u\left( t \right) = sin(2\pi ft)$, using an ODE solver from OrdinaryDiffEq.jl package, **change the value of the damping coefficient** $f_{v}$ to $f_{v} = 0.1\dot{x}$. You now have a  nonlinear system. Simulate for $t = \left\lbrack 0,\ 100s \right\rbrack$ and plot *both* $x,\dot{x}$ on the figure. Note that the differential equation for the spring-mass-damper system above can also be expressed as: 
+Obtain the differential equation from the transfer function on the first page from equation (1), into the form shown in equation (2), then simulate the response to a *sinusoidal input* of unity magnitude and $f = 0.1Hz$, $u( t ) = sin(2\pi ft)$, using an ODE solver from OrdinaryDiffEq.jl package, **change the value of the damping coefficient** $f_{v}$ to $f_{v} = 0.1\dot{x}$. You now have a  nonlinear system. Simulate for $t = \left\lbrack 0,\ 100s \right\rbrack$ and plot *both* $x,\dot{x}$ on the figure. Note that the differential equation for the spring-mass-damper system above can also be expressed as: 
 
 $M\frac{d^{2}x}{dt^{2}} + f_{v}\frac{\text{dx}}{\text{dt}} + Kx = Ku$
 
@@ -153,7 +153,7 @@ We wish to model the 2-D attitude of a space satellite body. The 2-D satellite b
 
 Given $d = 2m$, $I = 3.5kg \cdot m^{2}$
 
-Derive the equation of motion for the satellite body shown, then derive the transfer function relating the resultant thrust force $F_{R} = F_{1} - F_{2}$ to the angular position of the body $\theta$, that is, find $G\left( s \right) = \dfrac{\Theta\left( s \right)}{F_{R}\left( s \right)}$.
+Derive the equation of motion for the satellite body shown, then derive the transfer function relating the resultant thrust force $F_{R} = F_{1} - F_{2}$ to the angular position of the body $\theta$, that is, find $G( s ) = \dfrac{\Theta( s )}{F_{R}( s )}$.
 Neglect $M_{D}$.
 Given the system equation of motion, simulate the response to the following inputs, assuming $M_{D}(t) = 0$. Simulate the response using basic numerical integration.
 
@@ -166,7 +166,7 @@ $F_1 = \begin{cases} 0  &  0 < t < 2s \\ 2 & 2s \leq t < 4s \\  0 & 4s \leq t \e
 The thruster input function above is termed a bang-bang command. The idea is to apply an equal but opposite set of moments in order to roll the satellite body over a defined angle. The gas thrusters can only act in one direction, so a pair is needed to move-then-stop. This input is termed an open-loop input, meaning it doesn't consider the actual response in the system (it's blind toward the system's actual response).
 In reality it's quite impossible to control a satellite body in this fashion, we will need to employ a feedback controller to provide just the right amount of thruster force to perform a rotation. Next we will see the effect of adding just a tiny amount of  disturbance noise to the model.
 
-Repeat the simulation but this time assume that the disturbance moment is modeled as a zero-mean Gaussian noise with $\sigma = 0.005$. Hint: to generate this random noise value use: $\sigma*randn\left( 1 \right)$
+Repeat the simulation but this time assume that the disturbance moment is modeled as a zero-mean Gaussian noise with $\sigma = 0.005$. Hint: to generate this random noise value use: $\sigma*randn( 1 )$
 
 <!-- Exercise 4 - 2 -->
 \input{julia}{ex4_2.jl}
@@ -184,9 +184,9 @@ A simple pendulum from a uniform slender rod is shown on Figure 3.
 
 The equation of motion for the pendulum is given as
 
-$$\ddot{\theta}\left( I + m_{r}l^{2} \right) + m_{r}glsin\theta = M$$ 
+$$\ddot{\theta}( I + m_{r}l^{2} ) + b\dot{\theta} + m_{r}glsin\theta = M$$ 
 
-Where $M$ is the torque applied at the pivot, $m_{r}$ is the mass of the rod, $I$ is the rod's moment of inertia about its center of mass, $l$ is the distance from the pivot to the center of mass of the rod and $g$ is the gravity constant
+Where $M$ is the torque applied at the pivot, $m_{r}$ is the mass of the rod, $I$ is the rod's moment of inertia about its center of mass, $l$ is the distance from the pivot to the center of mass of the rod, $b$ is the rotational damping coefficient at the hinge and $g$ is the gravity constant
 
 Note that the above equations are nonlinear due to the presence of the trigonometric term $\text{sinθ}$
 
@@ -195,14 +195,14 @@ Note that the above equations are nonlinear due to the presence of the trigonome
 
 Given the following parameters:
 
-Parameter  |    $m_{r}$     |     $I$                 | $l$
------------|----------------|-------------------------|-----------------
-Value      | $3\text{kg}$   | $0.018kg \cdot m^{2}$   | $17\text{cm}$
+Parameter  |    $m_{r}$     |    $b$             |  $l$
+-----------|----------------|--------------------|-------------
+Value      | $3\text{kg}$   |  $0.01 N \cdot s$  | $19\text{cm}$
 
 Simulate the response of the above nonlinear system given the following input function and plot the following responses: $\theta,\dot{\theta}$. Simulate using basic numerical integration.
 If the response is unstable (grows out of bounds) try to reduce the integration time step $\Delta t$
 
-$M = \begin{cases} 3N \cdot m & 0 < t < 2s  \\ 0 & 2s \leq t \end{cases}$
+$M = \begin{cases} 5N \cdot m & 0 < t < 3s  \\ 0 & 3s \leq t \end{cases}$
 
 <!-- Exercise 5 -->
 \input{julia}{ex5.jl}
