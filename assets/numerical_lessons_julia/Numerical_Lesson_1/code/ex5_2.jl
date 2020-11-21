@@ -1,31 +1,23 @@
 # Exercise 5.2
 
-function dxdt(x,u,t)
-    mr = 3; l = .19; g = 9.81;
+function dxdt_linear(x,u,t)
+    mr = 3; l = .19; g = 9.81; b = 0.1;
     I = 4/3*mr*l^2; 
     dx = [0.0; 0.0]
     dx[1] = x[2];
-    dx[2] = (u - mr * g * l *x[1]) / ( I + mr * l^2);
+    dx[2] = (u - mr * g * l *x[1] - b*x[2]) / (I + mr * l^2);
     return dx
 end
- 
+
 # Initialize x
 x_sim = zeros(2,length(t)); # Empty 2xn array
 x_sim[:,1] = x0;
  
-function up(t)
-    if t < 3
-        return 5
-    else
-        return 0
-    end
-end
-
 for ix = 1:length(t)-1
-    xdot = dxdt(x_sim[:,ix], up(t[ix]), t[ix]); # Grab the derivative vector
+    xdot = dxdt_linear(x_sim[:,ix], up(t[ix]), t[ix]); # Grab the derivative vector
     x_sim[:, ix+1] = x_sim[:, ix] + xdot * dt; # Integrate x
 end
- 
+
 # And plot
 p = plot(t,up.(t), lw=3, label = "M")
 plot!(t,x_sim[1,:], lw=3, label = "\$θ\$")
