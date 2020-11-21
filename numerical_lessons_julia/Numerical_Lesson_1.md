@@ -35,7 +35,7 @@ Simulate the response of the system to a step input using the command *stepplot(
 ```
 <!-- Exercise 1 -->
 \input{julia}{ex1.jl}
-\output{ex1.jl}
+\input{plaintext}{output/ex1.txt}
 \fig{ex1_plot}
 
 Using the command *stepplot()* is useful for analyzing a system's response to a simple and  constant input to a system, but what if the input varies? We can instead use the command *lsimplot()*.

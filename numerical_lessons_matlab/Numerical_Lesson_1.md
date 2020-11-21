@@ -490,7 +490,6 @@ print(gcf,'foo.png','-dpng','-r600');
 ```
 \fig{./output/figure_9.png}
 
-
 Note that when experimenting with a controller design via simulation, we design the controller using the linearized model if we wish, but it is important to simulate the response as accurate as possible. That is,
 simulate the nonlinear response.
 
