@@ -25,7 +25,7 @@ Lecture notes and videos (planned) can be found listed on the site navigation ba
 ## [Numerical Lessons](numerical_lessons/index.html)
 The course gives a strong emphasis on applying control system theory numerically, through the use of built-in functions and bare-method simulations. 
 
-The lessons are provided for MATLAB (and planned for JuliaLang)
+The lessons are provided for MATLAB and JuliaLang (WIP)
 
 [Numerical Lessons](numerical_lessons/index.html)
 
