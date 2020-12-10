@@ -22,7 +22,7 @@ Building on material from Lesson 1, feedback control is introduced in the contex
 <center><img src="/assets/numerical_lessons_matlab/Numerical_Lesson_4/media/DiskDrive.svg" style="max-width:550px"></center>
 ~~~
 
-[Julia](),
+[Julia](/numerical_lessons_julia/Numerical_Lesson_2/index.html),
 [MATLAB](/numerical_lessons_matlab/Numerical_Lesson_2/index.html)
 
 ## Lesson 3 - Root-Locus Controller Design

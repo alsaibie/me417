@@ -1,0 +1,12 @@
+G1 = Sym_to_TF(G1s) = TransferFunction{Continuous,ControlSystems.SisoRational{Float64}}
+ 0.1*s^2 + 0.1*s + 0.07
+-------------------------
+0.01*s^2 + 0.02*s + 0.014
+
+Continuous-time transfer function model
+G2 = Sym_to_TF(G2s) = TransferFunction{Continuous,ControlSystems.SisoRational{Float64}}
+      0.1*s + 0.07
+-------------------------
+0.01*s^2 + 0.02*s + 0.014
+
+Continuous-time transfer function model

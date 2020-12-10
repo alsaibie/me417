@@ -54,13 +54,13 @@ end
 Repeat task 1 above, but to an input force defined by the piecewise function below, using the command *lsim()*, from $t = 0s$ to $t = 100s$, and plot the result in a new figure.
 
 $f\left( t \right) = \left\{ \begin{matrix}
-0 & ,0 < t \leq 1.5s \\
-3 & ,1.5s < t \leq 8s \\
+0 & ,0 < t \leq 2.5s \\
+6 & ,2.5s < t \leq 9s \\
 \begin{matrix}
- - 3 \\
+ - 6 \\
 0 \\
 \end{matrix} & \begin{matrix}
-,8s < t \leq 14s \\
+,9s < t \leq 16s \\
 14s < t \\
 \end{matrix} \\
 \end{matrix} \right.\ $

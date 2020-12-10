@@ -1,4 +1,3 @@
-
 dir = @__DIR__
 
 """
@@ -32,16 +31,7 @@ config = Dict(
 merge!(rcParams, config)
 colors = palette(:jet) #hide
 
-##
 
-# output
-genplain("ex1.jl")
-genplain("ex1_2.jl")
-genplain("snp1.jl")
-genplain("ex2.jl")
-genplain("snp2.jl")
-genplain("ex3.jl")
-genplain("ex4.jl")
-genplain("ex4_2.jl")
-genplain("ex5.jl")
-genplain("ex5_2.jl")
+##
+genplain("L2_ex1.jl")
+genplain("L2_ex2.jl")
