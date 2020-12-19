@@ -46,8 +46,8 @@ for idx = 1:length(t_sim)-1
 end
  
 # And plot
-p = plot(t_sim,0.01*u, lw=3, label = "0.01u")
-plot!(t_sim,x_sim[1,:], lw=3, label = "\$x_1\$")
+p = plot(t_sim,0.05*u, lw=3, label = "0.05u")
+plot!(t_sim,10*x_sim[1,:], lw=3, label = "\$10x_1\$")
 plot!(p, t_sim,x_sim[2,:], lw=3, label = "\$x_2\$")
 plot!(p, framestyle=:origin, xguide="Time (s)", yguide="Response", linecolor=colors, title="", background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
 savefig(joinpath(@__DIR__, "output", "ex9_plot.svg")) #hide
