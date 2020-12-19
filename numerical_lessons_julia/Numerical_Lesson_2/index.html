@@ -302,8 +302,8 @@ Kp = <span class=hljs-number >10</span>; Ki = <span class=hljs-number >8</span>;
 <span class=hljs-keyword >end</span>
  
 <span class=hljs-comment ># And plot</span>
-p = plot(t_sim,<span class=hljs-number >0.01</span>*u, lw=<span class=hljs-number >3</span>, label = <span class=hljs-string >&quot;0.01u&quot;</span>)
-plot!(t_sim,x_sim[<span class=hljs-number >1</span>,:], lw=<span class=hljs-number >3</span>, label = <span class=hljs-string >&quot;\$x_1\$&quot;</span>)
+p = plot(t_sim,<span class=hljs-number >0.05</span>*u, lw=<span class=hljs-number >3</span>, label = <span class=hljs-string >&quot;0.05u&quot;</span>)
+plot!(t_sim,<span class=hljs-number >10</span>*x_sim[<span class=hljs-number >1</span>,:], lw=<span class=hljs-number >3</span>, label = <span class=hljs-string >&quot;\$10x_1\$&quot;</span>)
 plot!(p, t_sim,x_sim[<span class=hljs-number >2</span>,:], lw=<span class=hljs-number >3</span>, label = <span class=hljs-string >&quot;\$x_2\$&quot;</span>)
 
 stepinfo(t_sim[:,<span class=hljs-number >1</span>], x_sim[<span class=hljs-number >1</span>,:])</code></pre> <img src="/me417/assets/numerical_lessons_julia/Numerical_Lesson_2/code/output/ex9_plot.svg" alt=""> <pre><code class="plaintext hljs">Rise Time: 0.096 s
