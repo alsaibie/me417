@@ -6,15 +6,15 @@ using LaTeXStrings #hide
 using ControlSystems
 using SymPy
 
-(s, K, b, I_h, I_m) = symbols("s K b I_h I_h")
+(s, K, b, Ih, Im) = symbols("s K b I_h I_h")
 
-K_ = 0.07; b_ = 0.1; I_h_ = 0.04; I_m_ = 0.1;
-A = [I_m*s^2+b*s+K -b*s-K; -b*s-K I_h*s^2+b*s+K];
+K_v = 0.07; b_v = 0.1; Ih_v = 0.04; Im_v = 0.1;
+A = [Im*s^2+b*s+K -b*s-K; -b*s-K Ih*s^2+b*s+K];
 B = [1; 0];
 
 Gx = inv(A)*B
-G1s = subs(s^2*Gx[1], zip((K, I_m, I_h, b), (K_, I_m_, I_h_, b_))...);
-G2s = subs(s^2*Gx[2], zip((K, I_m, I_h, b), (K_, I_m_, I_h_, b_))...);
+G1s = (s^2*Gx[1])(K=>K_v, Im=>Im_v, Ih=>Ih_v, b=>b_v);
+G2s = (s^2*Gx[2])(K=>K_v, Im=>Im_v, Ih=>Ih_v, b=>b_v);
 
 # Takes a symbolic returns a ControlSystems::TransferFunction
 function Sym_to_TF(G::Sym)::TransferFunction 
@@ -27,12 +27,12 @@ function Sym_to_TF(G::Sym)::TransferFunction
     return tf(num, den) # Convert to ControlSystems::TransferFunction
 end
 
-@show G1  = Sym_to_TF(G1s)
-@show G2  = Sym_to_TF(G2s)
+G1  = Sym_to_TF(G1s)
+@show G1s
+G2  = Sym_to_TF(G2s)
+@show G2s
 
 t = 0:0.1:10;
 p = stepplot(G2, t, lw=3)
-
 plot!(p, framestyle=:origin, xguide="Time (s)", yguide="A", linecolor=colors, title="", background_color=:transparent, foreground_color=:black, size=(800, 400); grid=true, minorgrid=true) #hide
-
 savefig(joinpath(@__DIR__, "output", "ex1_plot.svg")) #hide
