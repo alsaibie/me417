@@ -1,0 +1,2 @@
+Motor Parameters:
+R_a=8, K_t=1.92, K_b=1.0, J_m=1.8, D_m=0.578

@@ -1,0 +1,4 @@
+Rise Time: 2.55 s
+Percent Overshoot: 0.0%
+Peak Time: 5.0 s
+Settling Time: 4.85 s
