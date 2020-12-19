@@ -1,0 +1,10 @@
+Analytical:
+Percent Overshoot: 20.2%
+Peak Time: 1 s
+Settling Time: 2.5 s
+
+Measured:
+Rise Time: 0.49 s
+Percent Overshoot: 20.1%
+Peak Time: 0.98 s
+Settling Time: 2.38 s
