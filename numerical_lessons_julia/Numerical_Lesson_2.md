@@ -29,8 +29,6 @@ Derive the transfer function $G_{2}( s ) = \dfrac{s^2\Theta_h} {M_m} = \dfrac{\d
 
 Hint: Solve for a linear systems of equation or use Cramer's rule.
 
-Hint: Use the following functions: numden(), sym2poly() and tf() to convert a symbolic T.F to a Laplace T.F.
-
 Simulate the response to a step input using the ControlSystems.jl *stepplot()* command.
 
 Table 1 Disk Drive Parameters
