@@ -9,7 +9,6 @@
     var elcart = board.create('line',[[0,0], [1,0]], {strokeOpacity: .01, strokeColor: '#000000', fixed: true, name: 'cartline'});
     var glcart = board.create('glider', [0, 0, elcart], { name:''});
 
-    // p1 = board.create('point', [0.0, 0.0], { visible: false, name: 'a', size: 3 });
     p = [];
     p.push(board.create('point', [function () { return glcart.X() - 2; }, -1], { visible: false, name: 'A' }));
     p.push(board.create('point', [function () { return glcart.X() - 2; }, +1], { visible: false, name: 'B' }));
@@ -22,19 +21,13 @@
     glpend = board.create('glider', [c1], { visible: true, name: '', size: 3 });
     line = board.create('line', [glcart, glpend], { visible: true, straightFirst: false, straightLast: false });
     isInDragMode = false;
-    // grr = board.create('functiongraph', [function (t) { return -10 - 2 * Math.cos(t / 2); }, -10, 10], { strokeColor: "#cccccc" });
-    // p3 = board.create('point', [
-    //     function () { return 2 * Math.atan2(p2.X(), -p2.Y()) },
-    //     function () { return -10 - 2 * Math.cos(Math.atan2(p2.X(), -p2.Y())) }],
-    //     { visible: true, name: '', size: 3 }),
+
     
     var kpS = board.create('slider', [[-26, 7], [-21, 7], [1, 5.9, 10]]); board.createElement('text', [-28, 7, function () { return '\\[K_p\\]'; }]);
     var kiS = board.create('slider', [[-26, 5], [-21, 5], [0, 0.0, 10]]); board.createElement('text', [-28, 5, function () { return '\\[K_i\\]'; }]);
     var kdS = board.create('slider', [[-26, 3], [-21, 3], [0, 8.5, 5]]); board.createElement('text', [-28, 3, function () { return '\\[K_d\\]'; }]);
     var u = 0;
     var eprev =0, edot = 0, eint = 0, tprev = 0, e = 0;
-    // var text = board.create('text',
-    //                    [0, -1,function(){return "The value of u is"+JXG.toFixed(e, 2);}]);
 
     function startAnimation(x0) {
         var kp = kpS.Value(), ki = kiS.Value(), kd = kdS.Value();
