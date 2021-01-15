@@ -221,3 +221,4 @@ Repeat task ‎1 using the linearized model and compare the nonlinear versus the
 Note that when experimenting with a controller design via simulation, we design the controller using the linearized model if we wish, but it is important to simulate the response as accurate as possible. That is, simulate the nonlinear response.
 _
 Explain why it is better to simulate the nonlinear model and not the linearized model, when testing a controller?
+
