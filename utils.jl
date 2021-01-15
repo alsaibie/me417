@@ -14,3 +14,21 @@ function lx_baz(com, _)
   # do whatever you want here
   return uppercase(brace_content)
 end
+
+function hfun_inserthtml(args)::String
+    # check params
+  if length(args) != 1
+      throw(HTMLFunctionError("I found a {{inserthtml ...}} with more than one parameter. Verify."))
+  end
+  # apply
+  repl   = ""
+  fpath  = args[1]
+  if isfile(fpath)
+      repl = Franklin.convert_html(read(fpath, String))
+  else
+      Franklin.hfun_misc_warn(:insert, """
+          Couldn't find the file '$fpath' to resolve the insertion.
+          """)
+  end
+  return repl
+end
