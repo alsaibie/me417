@@ -6,8 +6,8 @@
 - Since, JSXGraph.jl is still WIP, it does not support `text` object. If you wish you'll need to write JavaScript by yourself.
 
 ~~~
-<link rel="stylesheet" href="/libs/jsx/jsxgraph.css">
-<script type="text/javascript" src="/libs/jsx/jsxgraphcore.js"></script>
+<link rel="stylesheet" type="text/css" href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css" />
+<script type="text/javascript" src="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <div id="board" class="jxgbox" style="width:500px; height:500px;"></div>
 <script type="text/javascript">
