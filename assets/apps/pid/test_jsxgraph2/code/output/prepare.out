@@ -1,0 +1,3 @@
+ArgumentError: Package JSXGraph not found in current path:
+- Run `import Pkg; Pkg.add("JSXGraph")` to install the JSXGraph package.
+
