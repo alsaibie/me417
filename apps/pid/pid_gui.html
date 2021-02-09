@@ -33,7 +33,7 @@
         var kp = kpS.Value(), ki = kiS.Value(), kd = kdS.Value();
         var mr = 2, mc = 10, I = 0.106, b = 5, l = 0.4, g = 9.81;
         var lsqr = Math.pow(l, 2), mrsqr = Math.pow(mr, 2);
-
+        eint = 0;
         var f = function (t, x) {
             e = 0 - x[2];
             if (t>tprev)
