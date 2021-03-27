@@ -122,8 +122,9 @@ pre.code-output {
 .sidebar-nav .part {
     font-style: italic;
     display: flex;
+    cursor: pointer;
     align-items: center;
-    color: #4b527c;
+    color: #767fb1;
 }
 .sidebar-nav .part::before,
 .sidebar-nav .part::after {

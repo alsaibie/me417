@@ -10,7 +10,7 @@ This is a senior level course in the subject of control of mechanical systems. T
 Course syllabus can be found here: 
 [Fall 2020 Distant Learning](assets/syllabus/ME417_Syllabus_DL_Fall2020.pdf)
 
-The course is taught virtually during Fall 2020 through KU MS Teams and course material is hosted on [moodle.ku.edu.kw](moodle.ku.edu.kw)
+The course is taught remotely during Fall 2020 through KU MS Teams and course material is hosted on [moodle.ku.edu.kw](https://moodle.ku.edu.kw)
 
 Class Q&A is hosted on Piazza for class members. Guests can view the activity [here](https://piazza.com/demo_login?nid=ki4zyrihz2f6w&auth=6e9bef0). 
   
