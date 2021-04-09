@@ -102,6 +102,14 @@ pre.code-output {
     .sidebar-nav {
     }
 }
+@media screen and (max-width: 750px){
+    iframe {
+        max-width: 100% !important;
+        width: auto !important;
+        height: auto !important;
+    }
+}
+
 .sidebar .container.sidebar-sticky {
     top: 1rem;
 }
