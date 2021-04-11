@@ -1,18 +1,42 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-<channel>
-  <title><![CDATA[ME 417 Control of Mechanical Systems]]></title>
-  <description><![CDATA[ME 417 Control of Mechanical Systems Course Website - Kuwait University
-]]></description>
-  <link>https://alsaibie.github.io/me417/</link>
-  <atom:link href="https://alsaibie.github.io/me417/feed.xml" rel="self" type="application/rss+xml" />
-  <item>
-    <title><![CDATA[Numerical Lessons]]></title>
-    <link>https://alsaibie.github.io/me417/numerical_lessons/</link>
-    <description><![CDATA[Numerical Lessons in MATLAB and Julia
-<br><a href="https://alsaibie.github.io/me417/numerical_lessons/">Read more</a>]]></description>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:georss="http://www.georss.org/georss">
+
+  <channel>
+    <title>
+      <![CDATA[  ME 417 Control of Mechanical Systems  ]]>
+    </title>
+    <link> https://alsaibie.github.io/me417/ </link>
+    <description>
+      <![CDATA[  ME 417 Control of Mechanical Systems Course Website - Kuwait University  ]]>
+    </description>
+    <atom:link
+      href="https://alsaibie.github.io/me417/feed.xml"
+      rel="self"
+      type="application/rss+xml" />
+
+
+<item>
+  <title>
+    <![CDATA[  Numerical Lessons  ]]>
+  </title>
+  <link> https://alsaibie.github.io/me417/numerical_lessons/index.html </link>
+  <guid> https://alsaibie.github.io/me417/numerical_lessons/index.html </guid>
+  <description>
+    <![CDATA[  Numerical Lessons in MATLAB and Julia  ]]>
+  </description>  
     
-    <guid>https://alsaibie.github.io/me417/numerical_lessons/</guid>
-    <pubDate>Fri, 22 Mar 2019 00:00:00 UT</pubDate>
-  </item>
-</channel>
-</rss>
+  <pubDate>Fri, 22 Mar 2019 00:00:00 +0000</pubDate>  
+  
+  
+  <atom:author>
+    <atom:name>Ali AlSaibie, PhD</atom:name>
+  </atom:author>
+        
+</item>
+</channel></rss>
