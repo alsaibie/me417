@@ -4,8 +4,13 @@
 # Part I L5 - Electromechanical Systems
 
 ## Lecture Video
+Part A
 ~~~
-<iframe src="https://player.vimeo.com/video/538285574" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/538285574" width="780" height="438" frameborder="0" allowfullscreen></iframe>
+~~~
+Part B
+~~~
+<iframe src="https://player.vimeo.com/video/539092669" width="780" height="438" frameborder="0" allowfullscreen></iframe>
 ~~~
 
 ### Lecture Handout

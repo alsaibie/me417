@@ -4,8 +4,15 @@
 # Part I L6 - Poles, Zeros and System Response
 ## Lecture Video
 
+Part A
+
+~~~
+<iframe src="https://player.vimeo.com/video/539092959" width="780" height="438" frameborder="0" allowfullscreen></iframe>
+~~~
 
 [Lecture Handout](/part_i/ME417_-_Controls_-_Part_I_Lecture_6_Poles_Zeros_and_System_Response.pdf)
+
+Next: [Part I L7 - The General Second-Order System](../lecture7/)
 
 ## Objectives
 
@@ -144,3 +151,5 @@ Remember that the above defined equations are strictly for a system with the tra
 <center><img src="/part_i/lecture6_media/FirstOrderResponse.svg" style="max-width:485px"></center>~~~
 
 ## Second-Order Systems
+
+Next: [Part I L7 - The General Second-Order System](../lecture7/)
