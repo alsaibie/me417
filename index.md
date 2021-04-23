@@ -31,6 +31,11 @@ Lecture notes and videos (planned) can be found listed on the site navigation ba
 | [Part III](part_iii/introduction/index.html)~~~<br>~~~ | Controller Design via State-Space
 
 | [Part IV](part_iv/introduction/index.html)  ~~~<br>~~~ | Controller Design via Frequency Response
+
+## Lecture Videos
+
+Lecture videos are posted under each lesson. [Here](/videos), there are provided as a playlist. 
+
 ## Past Assignments
 Past [Homework](homeworks/index.html) and [Numerical Assignments](numerical_assignments/index.html) are posted. 
 
@@ -45,6 +50,8 @@ Past [Homework](homeworks/index.html) and [Numerical Assignments](numerical_assi
 R. C. Dorf & R. H. Bishop, Modern Control Systems\\
 G. F. Franklin, J. D. Powell & A. Emami-Naeini, Feedback Control of Mechanical Systems\\
 K. Ogata, Modern Control Engineering
+
+
 
 
 
