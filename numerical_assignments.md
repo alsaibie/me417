@@ -5,6 +5,7 @@
 ## Spring 2021
 [Numerical Assignments #1](ME_417_Control_of_Mechanical_Systems_Spring_2021_-_Num_Assignment_1.pdf)
 
+[Numerical Assignments #2](ME_417_Control_of_Mechanical_Systems_Spring_2021_-_Num_Assignment_2.zip)
 # Past Numerical Assignments
 
 ## Fall 2020
