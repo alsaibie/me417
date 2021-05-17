@@ -4,6 +4,7 @@
 
 ## Spring 2021
 [Homework #1](ME_417_Control_of_Mechanical_Systems_Spring_2021_-_Homework_1.pdf)
+[Homework #1 Solution](ME_417_Control_of_Mechanical_Systems_Spring_2021_-_Homework_1_Solution.pdf)
 
 [Homework #2](ME_417_Control_of_Mechanical_Systems_Spring_2021_-_Homework_2.pdf)
 
