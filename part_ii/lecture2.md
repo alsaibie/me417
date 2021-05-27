@@ -22,5 +22,13 @@ Part C
 <iframe src="https://player.vimeo.com/video/554667673" width="780" height="438" frameborder="0" allowfullscreen></iframe>
 ~~~   
 
+Part D
+
+~~~
+<iframe src="https://player.vimeo.com/video/555723778" width="780" height="438" frameborder="0" allowfullscreen></iframe>
+~~~   
+
 ## Lecture Handout
 [Handout](/part_ii/ME417_-_Controls_-_Part_II_Lecture_2_Sketching_the_Root-Locus.pdf)
+
+Next: [Part II L3 - Transient Response Design via Gain Adjustment](/part_ii/lecture3/)
