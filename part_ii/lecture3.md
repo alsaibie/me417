@@ -9,6 +9,14 @@ Part A
 
 ~~~
 <iframe src="https://player.vimeo.com/video/555723849" width="780" height="438" frameborder="0" allowfullscreen></iframe>
+~~~  
+
+Part B
+
+~~~
+<iframe src="https://player.vimeo.com/video/556846367" width="780" height="438" frameborder="0" allowfullscreen></iframe>
 ~~~   
 
 [Lecture Handout](/part_ii/ME417_-_Controls_-_Part_II_Lecture_3_Transient_Response_Design_via_Gain_Adjustment.pdf)
+
+Next: [Part II L4 - Improving Steady State Response](/part_ii/lecture4/)
