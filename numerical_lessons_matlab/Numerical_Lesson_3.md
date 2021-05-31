@@ -2,6 +2,10 @@
 # ~~~
 <span style='color:green'>ME 417 - Numerical Lesson #3</span>~~~
 
+~~~
+<iframe src="https://player.vimeo.com/video/557124240" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+~~~
+
 [Back to Lessons](/numerical_lessons/index.html)
 
 In the first part you will follow a guided example on how to use the Control System Designer app in MATLAB to design a controller using root-locus.
