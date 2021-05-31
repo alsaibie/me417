@@ -1,0 +1,43 @@
+
+Gpid =
+ 
+             
+  Kp + Kd * s
+             
+
+  with Kp = 0.692, Kd = 0.225
+ 
+Continuous-time PD controller in parallel form.
+
+
+Gcl =
+ 
+     44.98 s^3 + 250.9 s^2 + 424.9 s + 242.4
+  ----------------------------------------------
+  20 s^4 + 115 s^3 + 299.9 s^2 + 424.9 s + 242.4
+ 
+Continuous-time transfer function.
+
+
+E =
+ 
+             20 s^4 + 70 s^3 + 49 s^2
+  ----------------------------------------------
+  20 s^4 + 115 s^3 + 299.9 s^2 + 424.9 s + 242.4
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+        RiseTime: 0.4331
+    SettlingTime: 3.6194
+     SettlingMin: 0.9124
+     SettlingMax: 1.2866
+       Overshoot: 28.6554
+      Undershoot: 0
+            Peak: 1.2866
+        PeakTime: 1.1360
+
