@@ -119,6 +119,102 @@ Gh =
  
 Continuous-time transfer function.
 
+ 
+G_symbolic =
+ 
+ (I_h*s^2 + b*s + K)/(I_h*I_m*s^4 + I_h*K*s^2 + I_m*K*s^2 + I_h*b*s^3 + I_m*b*s^3)
+           (K + b*s)/(I_h*I_m*s^4 + I_h*K*s^2 + I_m*K*s^2 + I_h*b*s^3 + I_m*b*s^3)
+ 
+
+Gm =
+ 
+   200 s^2 + 500 s + 350
+  ------------------------
+  20 s^4 + 70 s^3 + 49 s^2
+ 
+Continuous-time transfer function.
+
+
+Gh =
+ 
+        500 s + 350
+  ------------------------
+  20 s^4 + 70 s^3 + 49 s^2
+ 
+Continuous-time transfer function.
+
+ 
+G_symbolic =
+ 
+ (I_h*s^2 + b*s + K)/(I_h*I_m*s^4 + I_h*K*s^2 + I_m*K*s^2 + I_h*b*s^3 + I_m*b*s^3)
+           (K + b*s)/(I_h*I_m*s^4 + I_h*K*s^2 + I_m*K*s^2 + I_h*b*s^3 + I_m*b*s^3)
+ 
+
+Gm =
+ 
+   200 s^2 + 500 s + 350
+  ------------------------
+  20 s^4 + 70 s^3 + 49 s^2
+ 
+Continuous-time transfer function.
+
+
+Gh =
+ 
+        500 s + 350
+  ------------------------
+  20 s^4 + 70 s^3 + 49 s^2
+ 
+Continuous-time transfer function.
+
+ 
+G_symbolic =
+ 
+ (I_h*s^2 + b*s + K)/(I_h*I_m*s^4 + I_h*K*s^2 + I_m*K*s^2 + I_h*b*s^3 + I_m*b*s^3)
+           (K + b*s)/(I_h*I_m*s^4 + I_h*K*s^2 + I_m*K*s^2 + I_h*b*s^3 + I_m*b*s^3)
+ 
+
+Gm =
+ 
+   200 s^2 + 500 s + 350
+  ------------------------
+  20 s^4 + 70 s^3 + 49 s^2
+ 
+Continuous-time transfer function.
+
+
+Gh =
+ 
+        500 s + 350
+  ------------------------
+  20 s^4 + 70 s^3 + 49 s^2
+ 
+Continuous-time transfer function.
+
+ 
+G_symbolic =
+ 
+ (I_h*s^2 + b*s + K)/(I_h*I_m*s^4 + I_h*K*s^2 + I_m*K*s^2 + I_h*b*s^3 + I_m*b*s^3)
+           (K + b*s)/(I_h*I_m*s^4 + I_h*K*s^2 + I_m*K*s^2 + I_h*b*s^3 + I_m*b*s^3)
+ 
+
+Gm =
+ 
+   200 s^2 + 500 s + 350
+  ------------------------
+  20 s^4 + 70 s^3 + 49 s^2
+ 
+Continuous-time transfer function.
+
+
+Gh =
+ 
+        500 s + 350
+  ------------------------
+  20 s^4 + 70 s^3 + 49 s^2
+ 
+Continuous-time transfer function.
+
 </code></pre></p>
 <p><strong>
 <span style='color:green'>EXERCISE 5</span></strong></p>
@@ -129,11 +225,212 @@ t = <span class=hljs-number >0</span>:<span class=hljs-number >0.001</span>:<spa
 Kp = <span class=hljs-number >.05</span>;
 Gc =  Kp;
 Gclm = feedback(Gc*Gm, <span class=hljs-number >1</span>)
-<span class=hljs-built_in >figure</span>()
+<span class=hljs-built_in >figure</span>(<span class=hljs-string >&#x27;Position&#x27;</span>, [<span class=hljs-number >0</span> <span class=hljs-number >0</span> <span class=hljs-number >900</span> <span class=hljs-number >450</span>])
 step(Gclm, t)
 stepinfo(Gclm)
 <span class=hljs-built_in >hold</span> on 
 step((<span class=hljs-number >1</span>-Gclm)*Gc*Gh, t)</code></pre> Output: <pre><code class="plaintext hljs">
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  &lt;a href=&quot;matlab:helpPopup struct&quot; style=&quot;font-weight:bold&quot;&gt;struct&lt;/a&gt; with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
+
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  &lt;a href=&quot;matlab:helpPopup struct&quot; style=&quot;font-weight:bold&quot;&gt;struct&lt;/a&gt; with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
+
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  &lt;a href=&quot;matlab:helpPopup struct&quot; style=&quot;font-weight:bold&quot;&gt;struct&lt;/a&gt; with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
+Error using &lt;a href=&quot;matlab:matlab.internal.language.introspective.errorDocCallback(&#x27;DynamicSystem/step&#x27;, &#x27;C:\Program Files\MATLAB\R2019a\toolbox\shared\controllib\engine\@DynamicSystem\step.m&#x27;, 95)&quot; style=&quot;font-weight:bold&quot;&gt;DynamicSystem/step&lt;/a&gt; (&lt;a href=&quot;matlab: opentoline(&#x27;C:\Program Files\MATLAB\R2019a\toolbox\shared\controllib\engine\@DynamicSystem\step.m&#x27;,95,0)&quot;&gt;line 95&lt;/a&gt;)
+&quot;LineWidth&quot; is not a valid plot style.
+
+Error in &lt;a href=&quot;matlab:matlab.internal.language.introspective.errorDocCallback(&#x27;snippet_I2&#x27;, &#x27;C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\snippet_I2.m&#x27;, 10)&quot; style=&quot;font-weight:bold&quot;&gt;snippet_I2&lt;/a&gt; (&lt;a href=&quot;matlab: opentoline(&#x27;C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\snippet_I2.m&#x27;,10,0)&quot;&gt;line 10&lt;/a&gt;)
+step((1-Gclm)*Gc*Gh, t, &#x27;LineWidth&#x27;, 3)
+
+Error in &lt;a href=&quot;matlab:matlab.internal.language.introspective.errorDocCallback(&#x27;run&#x27;, &#x27;C:\Program Files\MATLAB\R2019a\toolbox\matlab\lang\run.m&#x27;, 91)&quot; style=&quot;font-weight:bold&quot;&gt;run&lt;/a&gt; (&lt;a href=&quot;matlab: opentoline(&#x27;C:\Program Files\MATLAB\R2019a\toolbox\matlab\lang\run.m&#x27;,91,0)&quot;&gt;line 91&lt;/a&gt;)
+evalin(&#x27;caller&#x27;, strcat(script, &#x27;;&#x27;));
+
+Error in &lt;a href=&quot;matlab:matlab.internal.language.introspective.errorDocCallback(&#x27;run_matlab_scripts&#x27;, &#x27;C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\run_matlab_scripts.m&#x27;, 21)&quot; style=&quot;font-weight:bold&quot;&gt;run_matlab_scripts&lt;/a&gt; (&lt;a href=&quot;matlab: opentoline(&#x27;C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\run_matlab_scripts.m&#x27;,21,0)&quot;&gt;line 21&lt;/a&gt;)
+run(&#x27;snippet_I2.m&#x27;)
+
+
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  &lt;a href=&quot;matlab:helpPopup struct&quot; style=&quot;font-weight:bold&quot;&gt;struct&lt;/a&gt; with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
+Undefined function or variable &#x27;LineWidth&#x27;.
+
+Error in &lt;a href=&quot;matlab:matlab.internal.language.introspective.errorDocCallback(&#x27;run_matlab_scripts&#x27;, &#x27;C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\run_matlab_scripts.m&#x27;, 22)&quot; style=&quot;font-weight:bold&quot;&gt;run_matlab_scripts&lt;/a&gt; (&lt;a href=&quot;matlab: opentoline(&#x27;C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\run_matlab_scripts.m&#x27;,22,0)&quot;&gt;line 22&lt;/a&gt;)
+set(findall(gcf,&#x27;type&#x27;,&#x27;line&#x27;),&#x27;linewidth&#x27;,LineWidth);
+
+
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  &lt;a href=&quot;matlab:helpPopup struct&quot; style=&quot;font-weight:bold&quot;&gt;struct&lt;/a&gt; with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
+
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  &lt;a href=&quot;matlab:helpPopup struct&quot; style=&quot;font-weight:bold&quot;&gt;struct&lt;/a&gt; with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
+
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  &lt;a href=&quot;matlab:helpPopup struct&quot; style=&quot;font-weight:bold&quot;&gt;struct&lt;/a&gt; with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
+
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  &lt;a href=&quot;matlab:helpPopup struct&quot; style=&quot;font-weight:bold&quot;&gt;struct&lt;/a&gt; with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
+
 Gclm =
  
            10 s^2 + 25 s + 17.5
@@ -169,12 +466,184 @@ Ki = <span class=hljs-number >0</span>;
 Kd = <span class=hljs-number >0.22489</span>;
 Gpid = pid(Kp, Ki, Kd)
 <span class=hljs-comment >% Gc =  0.01;</span>
-<span class=hljs-built_in >figure</span>()
+<span class=hljs-built_in >figure</span>(<span class=hljs-string >&#x27;Position&#x27;</span>, [<span class=hljs-number >0</span> <span class=hljs-number >0</span> <span class=hljs-number >900</span> <span class=hljs-number >450</span>])
 Gcl = feedback(Gpid*Gm, <span class=hljs-number >1</span>)
 E = (<span class=hljs-number >1</span>-Gcl)
 [e,t] = step(E);
 step(Gcl, t)
 stepinfo(Gcl)</code></pre> Output: <pre><code class="plaintext hljs">
+Gpid =
+ 
+             
+  Kp + Kd * s
+             
+
+  with Kp = 0.692, Kd = 0.225
+ 
+Continuous-time PD controller in parallel form.
+
+
+Gcl =
+ 
+     44.98 s^3 + 250.9 s^2 + 424.9 s + 242.4
+  ----------------------------------------------
+  20 s^4 + 115 s^3 + 299.9 s^2 + 424.9 s + 242.4
+ 
+Continuous-time transfer function.
+
+
+E =
+ 
+             20 s^4 + 70 s^3 + 49 s^2
+  ----------------------------------------------
+  20 s^4 + 115 s^3 + 299.9 s^2 + 424.9 s + 242.4
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  &lt;a href=&quot;matlab:helpPopup struct&quot; style=&quot;font-weight:bold&quot;&gt;struct&lt;/a&gt; with fields:
+
+        RiseTime: 0.4331
+    SettlingTime: 3.6194
+     SettlingMin: 0.9124
+     SettlingMax: 1.2866
+       Overshoot: 28.6554
+      Undershoot: 0
+            Peak: 1.2866
+        PeakTime: 1.1360
+
+
+Gpid =
+ 
+             
+  Kp + Kd * s
+             
+
+  with Kp = 0.692, Kd = 0.225
+ 
+Continuous-time PD controller in parallel form.
+
+
+Gcl =
+ 
+     44.98 s^3 + 250.9 s^2 + 424.9 s + 242.4
+  ----------------------------------------------
+  20 s^4 + 115 s^3 + 299.9 s^2 + 424.9 s + 242.4
+ 
+Continuous-time transfer function.
+
+
+E =
+ 
+             20 s^4 + 70 s^3 + 49 s^2
+  ----------------------------------------------
+  20 s^4 + 115 s^3 + 299.9 s^2 + 424.9 s + 242.4
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  &lt;a href=&quot;matlab:helpPopup struct&quot; style=&quot;font-weight:bold&quot;&gt;struct&lt;/a&gt; with fields:
+
+        RiseTime: 0.4331
+    SettlingTime: 3.6194
+     SettlingMin: 0.9124
+     SettlingMax: 1.2866
+       Overshoot: 28.6554
+      Undershoot: 0
+            Peak: 1.2866
+        PeakTime: 1.1360
+
+
+Gpid =
+ 
+             
+  Kp + Kd * s
+             
+
+  with Kp = 0.692, Kd = 0.225
+ 
+Continuous-time PD controller in parallel form.
+
+
+Gcl =
+ 
+     44.98 s^3 + 250.9 s^2 + 424.9 s + 242.4
+  ----------------------------------------------
+  20 s^4 + 115 s^3 + 299.9 s^2 + 424.9 s + 242.4
+ 
+Continuous-time transfer function.
+
+
+E =
+ 
+             20 s^4 + 70 s^3 + 49 s^2
+  ----------------------------------------------
+  20 s^4 + 115 s^3 + 299.9 s^2 + 424.9 s + 242.4
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  &lt;a href=&quot;matlab:helpPopup struct&quot; style=&quot;font-weight:bold&quot;&gt;struct&lt;/a&gt; with fields:
+
+        RiseTime: 0.4331
+    SettlingTime: 3.6194
+     SettlingMin: 0.9124
+     SettlingMax: 1.2866
+       Overshoot: 28.6554
+      Undershoot: 0
+            Peak: 1.2866
+        PeakTime: 1.1360
+
+
+Gpid =
+ 
+             
+  Kp + Kd * s
+             
+
+  with Kp = 0.692, Kd = 0.225
+ 
+Continuous-time PD controller in parallel form.
+
+
+Gcl =
+ 
+     44.98 s^3 + 250.9 s^2 + 424.9 s + 242.4
+  ----------------------------------------------
+  20 s^4 + 115 s^3 + 299.9 s^2 + 424.9 s + 242.4
+ 
+Continuous-time transfer function.
+
+
+E =
+ 
+             20 s^4 + 70 s^3 + 49 s^2
+  ----------------------------------------------
+  20 s^4 + 115 s^3 + 299.9 s^2 + 424.9 s + 242.4
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  &lt;a href=&quot;matlab:helpPopup struct&quot; style=&quot;font-weight:bold&quot;&gt;struct&lt;/a&gt; with fields:
+
+        RiseTime: 0.4331
+    SettlingTime: 3.6194
+     SettlingMin: 0.9124
+     SettlingMax: 1.2866
+       Overshoot: 28.6554
+      Undershoot: 0
+            Peak: 1.2866
+        PeakTime: 1.1360
+
+
 Gpid =
  
              
@@ -242,6 +711,42 @@ Gv =
  
 Continuous-time transfer function.
 
+
+Gv =
+ 
+             s
+  ------------------------
+  50 s^3 + 102.5 s^2 + 8 s
+ 
+Continuous-time transfer function.
+
+
+Gv =
+ 
+             s
+  ------------------------
+  50 s^3 + 102.5 s^2 + 8 s
+ 
+Continuous-time transfer function.
+
+
+Gv =
+ 
+             s
+  ------------------------
+  50 s^3 + 102.5 s^2 + 8 s
+ 
+Continuous-time transfer function.
+
+
+Gv =
+ 
+             s
+  ------------------------
+  50 s^3 + 102.5 s^2 + 8 s
+ 
+Continuous-time transfer function.
+
 </code></pre></p>
 <h3 id=iiib_dc_motor_velocity_control_with_compensation ><a href="#iiib_dc_motor_velocity_control_with_compensation" class=header-anchor >III.B DC Motor Velocity Control with Compensation</a></h3>
 <p><strong>
@@ -254,7 +759,7 @@ Continuous-time transfer function.
 <span class=hljs-comment >%       s</span>
 Gc = <span class=hljs-number >1819</span> * (s+<span class=hljs-number >0.05</span>) * (s + <span class=hljs-number >4.671</span>) / s;
 Gvcl = feedback(Gc*Gv,<span class=hljs-number >1</span>);
-<span class=hljs-built_in >figure</span>()
+<span class=hljs-built_in >figure</span>(<span class=hljs-string >&#x27;Position&#x27;</span>, [<span class=hljs-number >0</span> <span class=hljs-number >0</span> <span class=hljs-number >900</span> <span class=hljs-number >450</span>])
 step(Gvcl)</code></pre>
 <img src="/me417/numerical_lessons_matlab/NL3assets/snippet_II2.svg" alt="">
 <h3 id=problem_iiic_dc_motor_position_control_with_compensation_and_cascade_controllers ><a href="#problem_iiic_dc_motor_position_control_with_compensation_and_cascade_controllers" class=header-anchor >Problem III.C DC Motor Position Control with Compensation and Cascade Controllers</a></h3>
@@ -276,7 +781,7 @@ step(Gvcl)</code></pre>
 <p>Give an example of where cascaded feedback controllers can be used. <pre><code class="matlab hljs"><span class=hljs-comment >% controlSystemDesigner(&#x27;rlocus&#x27;, Gvcl/s)</span>
 Gc_p = <span class=hljs-number >18</span>;
 Gpcl = feedback(Gc_p*Gvcl/s,<span class=hljs-number >1</span>);
-<span class=hljs-built_in >figure</span>()
+<span class=hljs-built_in >figure</span>(<span class=hljs-string >&#x27;Position&#x27;</span>, [<span class=hljs-number >0</span> <span class=hljs-number >0</span> <span class=hljs-number >900</span> <span class=hljs-number >450</span>])
 step(Gpcl)</code></pre></p>
 <img src="/me417/numerical_lessons_matlab/NL3assets/snippet_II3.svg" alt="">
 <div class=page-foot >

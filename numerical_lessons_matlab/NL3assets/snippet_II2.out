@@ -1,0 +1,17 @@
+Error using checkArgsForHandleToPrint
+Handle input argument contains nonhandle values.
+
+Error in checkArgsForHandleToPrint
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('print>LocalCreatePrintJob', 'C:\Program Files\MATLAB\R2019a\toolbox\matlab\graphics\printing\print.m', 100)" style="font-weight:bold">print>LocalCreatePrintJob</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019a\toolbox\matlab\graphics\printing\print.m',100,0)">line 100</a>)
+handles = checkArgsForHandleToPrint(0, varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('print', 'C:\Program Files\MATLAB\R2019a\toolbox\matlab\graphics\printing\print.m', 38)" style="font-weight:bold">print</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019a\toolbox\matlab\graphics\printing\print.m',38,0)">line 38</a>)
+[pj, inputargs] = LocalCreatePrintJob(varargin{:});
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('saveas', 'C:\Program Files\MATLAB\R2019a\toolbox\matlab\general\saveas.m', 181)" style="font-weight:bold">saveas</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019a\toolbox\matlab\general\saveas.m',181,0)">line 181</a>)
+        print( h, name, ['-d' dev{i}] )
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run_matlab_scripts', 'C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\run_matlab_scripts.m', 43)" style="font-weight:bold">run_matlab_scripts</a> (<a href="matlab: opentoline('C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\run_matlab_scripts.m',43,0)">line 43</a>)
+saveas(gcf,'snippet_II2.svg');
+
