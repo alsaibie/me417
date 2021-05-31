@@ -1,12 +1,14 @@
 @def title = "Numerical Integration - PID Controller"
 
-# Numerical Integration - PID Controller
-This example explains how to take simulate the closed-loop response of a system with a PID controller, using basic numerical integration. 
+# Implementing a PID Controller in Numerical Integration Simulation
+This note explains how to simulate the closed-loop response of a system that has a zero with a PID controller, using basic numerical integration. 
 
 Consider the following system, $G_p=\dfrac{3(s+3)}{s^2+3s+15}$, for which we want to apply the controller $G_c=0.007(s+20)\dfrac{s+6}{s}$ in unity feedback.
 
-If we want to simulate the closed-loop response to a step input, using the built-in functions, we first have to compute the closed-loop transfer function.
+If we want to simulate the closed-loop response to a step input, using the built-in functions, we can compute the direct closed-loop transfer function.
 $G_{cl}=\dfrac{G_cG_p}{1+G_cG_p}$
+
+Then we can directly use the `step()` response function.
 
 
 ```matlab
@@ -18,10 +20,8 @@ figure()
 step(Gcl)
 ```
 ```
-
-    
     s =
-     
+  
       s
      
     Continuous-time transfer function.
@@ -51,45 +51,46 @@ step(Gcl)
       --------------------------------------
       1.021 s^3 + 3.609 s^2 + 19.16 s + 7.56
      
-    Continuous-time transfer function.
-    
+    Continuous-time transfer function. 
 ```
     
-
 ~~~
 <center><img src="/assets/numerical_lessons_matlab/Numerical_Simulation_PID_Controller/media/output_1_1.png" style="max-width:780px"></center>
 ~~~
 
-
-
-## PID Controller - Continuos Form
+## PID Controller - Continuous Form
 But we want to simulate the response through basic numerical integration. Let's look at the PID control law
 
-$u(t)=K_P e(t) + K_I \int{e(t)dt} + K_D \dot{e}(t)$
+$$
+u(t)=K_P e(t) + K_I \int{e(t)dt} + K_D \dot{e}(t)
+$$
 
 And in code form
 
 ```matlab
 u[idx] = Kp*e[idx] + Ki*eint[idx] + Kd*edot[idx]
 ```
-We can only find the integral and derivative of the error by numerical integration and differentiation respectively, this is really a discrete controller, it will not produce the same response as we got with `step()`, but will be close if $\Delta t$ is sufficiently small.
 
-To find the error, error integral and error derivative numerically, where `r` is the reference and `y` is the output of the system, and `dt` is the time sample of the simulation.
+We can find the integral and derivative of the error by numerical integration and differentiation respectively, this is really a discrete controller, it will not produce the same response as we got with `step()`, but will be close if $\Delta t$ is sufficiently small.
+
+To find the error, error integral and error derivative numerically, where `r` is the reference and `y` is the output of the system, and `dt` is the time sample of the simulation. We can do the following
 
 ```matlab
 e[idx] = r[idx] - y[idx]
 eint[idx] = eint[idx-1]+ e[idx] * dt;
 edot[idx] = (e[idx] - e[idx -1]) / dt;
 ```
-Note that on the first iteration, can not access a negative index, so you can keep `eint[1]=e[1]*dt` and `edot[1]=0`, then apply the above rules for `idx>1`
+Note that on the first iteration, we can not access a negative index, so you can keep `eint[1]=e[1]*dt` and `edot[1]=0`, then apply the above rules for `idx>1`
 
-### Transfer function to $\dot{\mathbf{x}}$
+## Simulating a system response with a zero
 
 Converting the transfer function $G(s)=\dfrac{Y}{U}=\dfrac{2(s+30)}{s^2+4s+20}$ to a differential equation, we get $\ddot{y}+3\dot{y}+15y=3\dot{u}+9u$. This is a second order system, and to express it as a state-space vector model, we require two states. 
 
-$\dot{\mathbf{x}}=\begin{bmatrix}\dot{y} \\ \ddot{y}\end{bmatrix}=\begin{bmatrix}\dot{y} \\ -3\dot{y}-9y+3\dot{u}+9u\end{bmatrix}=\begin{bmatrix}x_2 \\ -3x_2-9x_1+3\dot{u}+9u\end{bmatrix}$
+$$
+\dot{\mathbf{x}}=\begin{bmatrix}\dot{y} \\ \ddot{y}\end{bmatrix}=\begin{bmatrix}\dot{y} \\ -3\dot{y}-9y+3\dot{u}+9u\end{bmatrix}=\begin{bmatrix}x_2 \\ -3x_2-9x_1+3\dot{u}+9u\end{bmatrix}
+$$
 
-But note that to implement it numerically, we would have to differentiate the input signal. A better approach is to separate the zeros of the plant transfer function, and rather than differentiate the input, scale the state by the numerator. Note that $G_p=\dfrac{Y}{U}=\dfrac{Y}{X}\dfrac{X}{U}=(3s+9)\dfrac{1}{s^2+3s+9}$, we can convert each of $\dfrac{X}{U}$ and $\dfrac{Y}{X}$ into a differential equation and we get: $\ddot{x}+3\dot{x}+15x=u$, and $y=3\dot{x}+9x$. Expressed numerically.
+But note that to implement it numerically, we would have to differentiate the input signal. A better approach is to separate the zeros of the plant transfer function, and rather than differentiate the input, scale the state by the numerator to produce the output (no differentiation necessary). Note that the plant can be separated as $G_p=\dfrac{Y}{U}=\dfrac{Y}{X}\dfrac{X}{U}=(3s+9)\dfrac{1}{s^2+3s+9}$, we can convert each of $\dfrac{X}{U}$ and $\dfrac{Y}{X}$ into a differential equation and we get: $\ddot{x}+3\dot{x}+15x=u$, and $y=3\dot{x}+9x$. Expressed numerically.
 
 ```matlab
 dxdt=@(t,x,u) [x(2); (-3*x(2)-15*x(1)+u)];
@@ -177,7 +178,7 @@ plot(t(1,1:end),y(1,1:end), ':')
 ## PID Controller - Discrete Form
 A numerical integration simulation is a discrete system simulation, and converges into a continuous system for small $\Delta t$, in addition, differentiating signal boundaries results in errors, and basic numerical integration is insufficient. 
 
-Given a continous form PID controller $G_c=\dfrac{K_Ds^2+K_Ps+K_I}{s}$, we can convert it into a discrete form then derive the difference equation. This is outside the scope of this class, but here is difference equation for a PID controller. 
+Given a continous form PID controller $G_c=\dfrac{K_Ds^2+K_Ps+K_I}{s}$, we can convert it into a discrete form then derive the difference equation. This is outside the scope of this class, but here is the difference equation form of a PID controller. 
 
 ```matlab
 u[k]=u[k-1] + a*e[idx] + b*e[idx-1] + c*e[idx-1]
@@ -193,8 +194,7 @@ $c=\dfrac{K_D}{\Delta t}$
 
 Note that the discrete PID gains are a function of the continous PID gains in addition to the sampling (integration) time-step. 
 
-Substituting into the simulation setup, let's see how this would work. 
-
+Let's substitute this in the simulation setup and see if it works.
 
 ```matlab
 dxdt=@(t,x,u) [x(2); (-3*x(2)-15*x(1)+u)];

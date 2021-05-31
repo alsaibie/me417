@@ -1,10 +1,9 @@
 @def title = "Numerical Lesson #1 - MATLAB"
 # ~~~
-<span style='color:green'>ME 417 Control of Mechanical Systems</span>~~~
+<span style='color:green'>ME 417 - Numerical Lesson #1</span>~~~
 
 [Back to Lessons](/numerical_lessons/index.html)
 
-### Numerical Lesson #1
 
 ~~~
 <iframe src="https://player.vimeo.com/video/536283723" width="640" height="360" frameborder="0" allowfullscreen></iframe>

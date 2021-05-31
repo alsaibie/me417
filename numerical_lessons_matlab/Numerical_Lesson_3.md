@@ -1,10 +1,9 @@
 @def title = "Numerical Lesson #2 - MATLAB"
 # ~~~
-<span style='color:green'>ME 417 Control of Mechanical Systems</span>~~~
+<span style='color:green'>ME 417 - Numerical Lesson #3</span>~~~
 
 [Back to Lessons](/numerical_lessons/index.html)
 
-### Numerical Lesson #3
 In the first part you will follow a guided example on how to use the Control System Designer app in MATLAB to design a controller using root-locus.
 
 In part two, you will design controllers for the disk drive system from previous assignments, in part four you will design controllers for a DC Motor.
