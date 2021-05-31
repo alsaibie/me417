@@ -21,3 +21,204 @@ ans =
             Peak: 1.9307
         PeakTime: 5.3494
 
+
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
+
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
+Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('DynamicSystem/step', 'C:\Program Files\MATLAB\R2019a\toolbox\shared\controllib\engine\@DynamicSystem\step.m', 95)" style="font-weight:bold">DynamicSystem/step</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019a\toolbox\shared\controllib\engine\@DynamicSystem\step.m',95,0)">line 95</a>)
+"LineWidth" is not a valid plot style.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('snippet_I2', 'C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\snippet_I2.m', 10)" style="font-weight:bold">snippet_I2</a> (<a href="matlab: opentoline('C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\snippet_I2.m',10,0)">line 10</a>)
+step((1-Gclm)*Gc*Gh, t, 'LineWidth', 3)
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2019a\toolbox\matlab\lang\run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019a\toolbox\matlab\lang\run.m',91,0)">line 91</a>)
+evalin('caller', strcat(script, ';'));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run_matlab_scripts', 'C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\run_matlab_scripts.m', 21)" style="font-weight:bold">run_matlab_scripts</a> (<a href="matlab: opentoline('C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\run_matlab_scripts.m',21,0)">line 21</a>)
+run('snippet_I2.m')
+
+
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
+Undefined function or variable 'LineWidth'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run_matlab_scripts', 'C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\run_matlab_scripts.m', 22)" style="font-weight:bold">run_matlab_scripts</a> (<a href="matlab: opentoline('C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\run_matlab_scripts.m',22,0)">line 22</a>)
+set(findall(gcf,'type','line'),'linewidth',LineWidth);
+
+
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
+
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
+
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
+
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
+
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
