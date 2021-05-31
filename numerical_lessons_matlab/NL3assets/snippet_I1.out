@@ -1,0 +1,24 @@
+ 
+G_symbolic =
+ 
+ (I_h*s^2 + b*s + K)/(I_h*I_m*s^4 + I_h*K*s^2 + I_m*K*s^2 + I_h*b*s^3 + I_m*b*s^3)
+           (K + b*s)/(I_h*I_m*s^4 + I_h*K*s^2 + I_m*K*s^2 + I_h*b*s^3 + I_m*b*s^3)
+ 
+
+Gm =
+ 
+   200 s^2 + 500 s + 350
+  ------------------------
+  20 s^4 + 70 s^3 + 49 s^2
+ 
+Continuous-time transfer function.
+
+
+Gh =
+ 
+        500 s + 350
+  ------------------------
+  20 s^4 + 70 s^3 + 49 s^2
+ 
+Continuous-time transfer function.
+

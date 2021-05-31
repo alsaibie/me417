@@ -1,0 +1,22 @@
+
+Gpid =
+ 
+             
+  Kp + Kd * s
+             
+
+  with Kp = 0.692, Kd = 0.225
+ 
+Continuous-time PD controller in parallel form.
+
+Undefined function or variable 'Gm'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('snippet1', 'C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\snippet1.m', 8)" style="font-weight:bold">snippet1</a> (<a href="matlab: opentoline('C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\snippet1.m',8,0)">line 8</a>)
+Gcl = feedback(Gpid*Gm, 1)
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run', 'C:\Program Files\MATLAB\R2019a\toolbox\matlab\lang\run.m', 91)" style="font-weight:bold">run</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2019a\toolbox\matlab\lang\run.m',91,0)">line 91</a>)
+evalin('caller', strcat(script, ';'));
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('run_matlab_scripts', 'C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\run_matlab_scripts.m', 5)" style="font-weight:bold">run_matlab_scripts</a> (<a href="matlab: opentoline('C:\Users\alsai\Dropbox\11_ACADEMIC\02_TEACHING\COURSE_SITES\ME 417 Site\numerical_lessons_matlab\NL3assets\run_matlab_scripts.m',5,0)">line 5</a>)
+run('snippet1.m')
+

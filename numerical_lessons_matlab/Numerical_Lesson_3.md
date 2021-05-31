@@ -66,7 +66,6 @@ Run the code above, and wait for the app window to show.
 
 Figure 2 shows the main app window.
 
-
 ~~~
 <center><img src="/assets/numerical_lessons_matlab/Numerical_Lesson_3/media/image2.png" style="max-width:780px"></center>
 ~~~
@@ -173,51 +172,12 @@ With the following parameters given, complete the following problems. Disk Drive
 
 Symbolically derive the transfer functions $G_m {\left(s\right)}=\frac{\theta_m \left(s\right)}{M_m \left(s\right)}$ and $G_h {\left(s\right)}=\frac{\theta_h \left(s\right)}{M_m \left(s\right)}$ in MATLAB. Verify with your answers from the previous assignment
 
-```matlab
-clear all;
-I_m_=0.1; I_h_=0.04; K_=0.07; b_=0.1;
-syms K b I_m I_h Mm s
-
-A = [I_m*s^2+b*s+K, -b*s-K;
-    -b*s-K, I_h*s^2+b*s+K];
-B=[1;0];
-G_symbolic = inv(A)*B
-Gm_s = subs(G_symbolic(1), {K I_m I_h b}, {K_ I_m_ I_h_ b_});
-Gh_s = subs(G_symbolic(2), {K I_m I_h b}, {K_ I_m_ I_h_ b_});
-[num,den] = numden(Gm_s);
-num = sym2poly(num);
-den = sym2poly(den);
-Gm = tf(num,den)
-[num,den] = numden(Gh_s);
-num = sym2poly(num);
-den = sym2poly(den);
-Gh = tf(num,den)
-```
-Output: 
-```
-G_symbolic =
- 
- (I_h*s^2 + b*s + K)/(I_h*I_m*s^4 + I_h*K*s^2 + I_m*K*s^2 + I_h*b*s^3 + I_m*b*s^3)
-           (K + b*s)/(I_h*I_m*s^4 + I_h*K*s^2 + I_m*K*s^2 + I_h*b*s^3 + I_m*b*s^3)
- 
-
-Gm =
- 
-   200 s^2 + 500 s + 350
-  ------------------------
-  20 s^4 + 70 s^3 + 49 s^2
- 
-Continuous-time transfer function.
+\input{matlab}{/numerical_lessons_matlab/NL3assets/snippet_I1.m}
+Output:
+\input{plaintext}{/numerical_lessons_matlab/NL3assets/snippet_I1.out}
+<!-- \fig{/prelabs/pl6assets/snippet1} -->
 
 
-Gh =
- 
-        500 s + 350
-  ------------------------
-  20 s^4 + 70 s^3 + 49 s^2
- 
-Continuous-time transfer function.
-```
 
 **~~~
 <span style='color:green'>EXERCISE 5</span>~~~**
@@ -228,43 +188,11 @@ To get the response of the head, first find the transfer function $\frac{U{\left
 Another way to do it is to find the transfer function $\frac{\Theta_h(s)}{\Theta_m(s)}$, then given the motor position response you can directly get the head position.
 Plot the controller output $u(t)$ in a different subplot.
 
-```matlab
-% controlSystemDesigner('rlocus', Gm)
-t = 0:0.001:20;
-Kp = .05;
-Gc =  Kp;
-Gclm = feedback(Gc*Gm, 1)
-figure()
-step(Gclm, t)
-stepinfo(Gclm)
-hold on 
-step((1-Gclm)*Gc*Gh, t)
-```
+\input{matlab}{/numerical_lessons_matlab/NL3assets/snippet_I2.m}
 Output:
-```
-Gclm =
- 
-           10 s^2 + 25 s + 17.5
-  --------------------------------------
-  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
- 
-Continuous-time transfer function.
+\input{plaintext}{/numerical_lessons_matlab/NL3assets/snippet_I2.out}
+\fig{/numerical_lessons_matlab/NL3assets/snippet_I2}
 
-ans = 
-  struct with fields:
-
-        RiseTime: 1.7725
-    SettlingTime: 396.0642
-     SettlingMin: 0.1166
-     SettlingMax: 1.9307
-       Overshoot: 93.0653
-      Undershoot: 0
-            Peak: 1.9307
-        PeakTime: 5.3494
-```
-~~~
-<center><img src="/assets/numerical_lessons_matlab/Numerical_Lesson_3/media/output_16_1.png" style="max-width:780px"></center>
-~~~
 
 ### II.C Disk Drive Collocated Position Control with Compensation
 
@@ -279,65 +207,10 @@ Simulate the closed-loop system in MATLAB using step(). Plot the responses of th
 Plot the controller output $u(t)$, and compare it to the controller output from the previous problem. - Explain the differences. Which one is more aggressive? And which one is more likely to cause issues in real-world implementations and why?
 Provide a block diagram of your feedback system. (A drawing)
 
-```matlab
-t = 0:0.001:5;
-Kp = 3.079*0.22489;
-Ki = 0;
-Kd = 0.22489;
-Gpid = pid(Kp, Ki, Kd)
-% Gc =  0.01;
-figure()
-Gcl = feedback(Gpid*Gm, 1)
-E = (1-Gcl)
-[e,t] = step(E);
-step(Gcl, t)
-stepinfo(Gcl)
-```
+\input{matlab}{/numerical_lessons_matlab/NL3assets/snippet_I3.m}
 Output:
-```
-Gpid =
- 
-             
-  Kp + Kd * s
-             
-
-  with Kp = 0.692, Kd = 0.225
- 
-Continuous-time PD controller in parallel form.
-
-
-Gcl =
- 
-     44.98 s^3 + 250.9 s^2 + 424.9 s + 242.4
-  ----------------------------------------------
-  20 s^4 + 115 s^3 + 299.9 s^2 + 424.9 s + 242.4
- 
-Continuous-time transfer function.
-
-
-E =
- 
-             20 s^4 + 70 s^3 + 49 s^2
-  ----------------------------------------------
-  20 s^4 + 115 s^3 + 299.9 s^2 + 424.9 s + 242.4
- 
-Continuous-time transfer function.
-
-ans = 
-  struct with fields:
-
-        RiseTime: 0.4331
-    SettlingTime: 3.6194
-     SettlingMin: 0.9124
-     SettlingMax: 1.2866
-       Overshoot: 28.6554
-      Undershoot: 0
-            Peak: 1.2866
-        PeakTime: 1.1360
-```
-~~~
-<center><img src="/assets/numerical_lessons_matlab/Numerical_Lesson_3/media/output_18_1.png" style="max-width:780px"></center>
-~~~
+\input{plaintext}{/numerical_lessons_matlab/NL3assets/snippet_I3.out}
+\fig{/numerical_lessons_matlab/NL3assets/snippet_I3}
 
 ### II.D Disk Drive Non-Collocated Position Control with Compensation
 So far we have only attempted to control the motor position with torque applied on the motor. What if our position sensor is not placed on the motor but on the head, and we want to control the position of the head by observing its position (and error) directly, while still acting on the motor. This is called a non-collocated control problem; input and output are not located in the same place.
@@ -364,21 +237,10 @@ Using the Control System Designer design a velocity feedback controller for the 
 Show a screenshot of your work
 Simulate the response in MATLAB and plot the velocity response and controller output in separate subplots.
 
-```matlab
-s = tf('s');
-Kt = 1; Kb = 3; Ra = 10; La = 5; J = 10; Dm = 0.5;
-Gv = Kt * s / ((J * s^2 + Dm * s) * (Ra + La * s) + Kt * Kb *s)
-```
+\input{matlab}{/numerical_lessons_matlab/NL3assets/snippet_II1.m}
 Output:
-```
-Gv =
- 
-             s
-  ------------------------
-  50 s^3 + 102.5 s^2 + 8 s
- 
-Continuous-time transfer function.
-```
+\input{plaintext}{/numerical_lessons_matlab/NL3assets/snippet_II1.out}
+<!-- \fig{/numerical_lessons_matlab/NL3assets/snippet_II1} -->
 
 ### III.B DC Motor Velocity Control with Compensation
 
@@ -390,20 +252,11 @@ Improve the velocity controller performance by selecting a proper compensator an
 Simulate the closed-loop system in MATLAB using step(). Plot the responses of the motor acceleration and velocity.
 Plot the controller output $u(t)$, and compare it to the controller output from the previous problem. Can this be practically delivered? Explain.
 
-```matlab
-% controlSystemDesigner('rlocus', Gv)
-% 1819.2 (s+0.05) (s+4.671)
-%  -------------------------
-%       s
-Gc = 1819 * (s+0.05) * (s + 4.671) / s;
-Gvcl = feedback(Gc*Gv,1);
-figure()
-step(Gvcl)
-```
+\input{matlab}{/numerical_lessons_matlab/NL3assets/snippet_II2.m}
+<!-- Output:
+\input{plaintext}{/numerical_lessons_matlab/NL3assets/snippet_II1.out} -->
+\fig{/numerical_lessons_matlab/NL3assets/snippet_II2}
 
-~~~
-<center><img src="/assets/numerical_lessons_matlab/Numerical_Lesson_3/media/output_23_1.png" style="max-width:780px"></center>
-~~~
 
 ### Problem III.C DC Motor Position Control with Compensation and Cascade Controllers
 For ease of implementation and troubleshooting, it is often more efficient to breakdown the control system design into multiple stages. In this problem you will use the new closed-loop system created from the previous problem and implement a new feedback loop around it to control position. Note that you already have a closed loop system relating reference velocity to output velocity, expressed in terms of the closed-loop transfer function. This can be thought of as a new “plant”, with this new plant we want to apply feedback to control position. The inner velocity control loop and outer position control loops are shown Figure 9, with the equivalent reduced form shown on Figure 10
@@ -434,14 +287,7 @@ Plot the velocity and position response of the motor on one subplot and the outp
 Another common example of where cascaded feedback controllers are used is in the control of multi-rotors (i.e. quadrotor drones). The inner loop would be an angular velocities controller that can be tuned (the gyroscope would provide the angular velocities sensing), this inner loop will be tuned, tested and troubleshooted until it produces a satisfactory angular rates response, this new closed-loop will be implemented in an attitude (angular position) controller outer-loop.
 
 Give an example of where cascaded feedback controllers can be used.
-
-```matlab
-% controlSystemDesigner('rlocus', Gvcl/s)
-Gc_p = 18;
-Gpcl = feedback(Gc_p*Gvcl/s,1);
-figure()
-step(Gpcl
-```
-~~~
-<center><img src="/assets/numerical_lessons_matlab/Numerical_Lesson_3/media/Output_25_1.png" style="max-width:780px"></center>
-~~~
+\input{matlab}{/numerical_lessons_matlab/NL3assets/snippet_II3.m}
+<!-- Output:
+\input{plaintext}{/numerical_lessons_matlab/NL3assets/snippet_II1.out} -->
+\fig{/numerical_lessons_matlab/NL3assets/snippet_II3}

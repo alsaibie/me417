@@ -1,0 +1,23 @@
+
+Gclm =
+ 
+           10 s^2 + 25 s + 17.5
+  --------------------------------------
+  20 s^4 + 70 s^3 + 59 s^2 + 25 s + 17.5
+ 
+Continuous-time transfer function.
+
+
+ans = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+        RiseTime: 1.7725
+    SettlingTime: 396.0642
+     SettlingMin: 0.1166
+     SettlingMax: 1.9307
+       Overshoot: 93.0653
+      Undershoot: 0
+            Peak: 1.9307
+        PeakTime: 5.3494
+
