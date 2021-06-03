@@ -5,5 +5,10 @@
 
 ## Lecture Video
 
-## Lecture Handout
-[Handout](/part_ii/ME417_-_Controls_-_Part_II_Lecture_5_Improving_Transient_Response.pdf)
+Part A
+
+~~~
+<iframe src="https://player.vimeo.com/video/558585404" width="780" height="438" frameborder="0" allowfullscreen></iframe>
+~~~  
+
+[Lecture Handout](/part_ii/ME417_-_Controls_-_Part_II_Lecture_5_Improving_Transient_Response.pdf)

@@ -18,3 +18,5 @@ Part B
 ~~~  
 
 [Lecture Handout](/part_ii/ME417_-_Controls_-_Part_II_Lecture_4_Improving_Steady_State_Response.pdf)
+
+Next: [Part II L5 - Improving Transient Response](/part_ii/lecture5/)
