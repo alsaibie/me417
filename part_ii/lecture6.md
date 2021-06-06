@@ -1,7 +1,7 @@
 @def title = "Part II L6 - Improving Overall Response"
 @def hascode = true
 
-## Introduction
+# Part II L6 - Improving Overall Response
 
 ## Lecture Video
 
