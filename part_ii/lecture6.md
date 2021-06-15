@@ -10,6 +10,12 @@ Part A
 <iframe src="https://player.vimeo.com/video/560376157" width="780" height="438" frameborder="0" allowfullscreen></iframe>
 ~~~  
 
+Part B
+
+~~~
+<iframe src="https://player.vimeo.com/video/562402792" width="780" height="438" frameborder="0" allowfullscreen></iframe>
+~~~  
+
 [Lecture Handout](/part_ii/ME417_-_Controls_-_Part_II_Lecture_6_Improving_Transient_and_Steady-State_Response.pdf)
 
 Next: [Part III L1 - State-Space Representation](/part_iii/lecture1/)

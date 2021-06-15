@@ -3,9 +3,18 @@
 
 ## Introduction
 
-## Lecture Video
+# Lecture Video
+
+Part A
+
 ~~~
-<iframe src="https://player.vimeo.com/video/511051023" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/562402813" width="780" height="438" frameborder="0" allowfullscreen></iframe>
+~~~ 
+
+Part B
+
 ~~~
-## Lecture Handout
-[Handout](/part_iii/ME417_-_Controls_-_Part_III_Lecture_1_State-Space_Representation.pdf)
+<iframe src="https://player.vimeo.com/video/563168892" width="780" height="438" frameborder="0" allowfullscreen></iframe>
+~~~ 
+
+[Lecture Handout](/part_iii/ME417_-_Controls_-_Part_III_Lecture_1_State-Space_Representation.pdf)
